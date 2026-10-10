@@ -154,10 +154,10 @@ h1,h2,h3,h4,.membership-price,.brand{font-family:var(--font-display)}
 .hero .parallax-backdrop{opacity:.32}
 .hero-grid>div[data-drift],.section-hero>.wrap[data-drift]{will-change:transform}
 .feature-section.has-hero{padding-top:0}
-.section-hero{position:relative;isolation:isolate;overflow:hidden;padding:112px 0 84px;background:#06121f;color:#e8f3f6;border-bottom:1px solid #1f4152}
+.section-hero{position:relative;isolation:isolate;overflow:hidden;padding:68px 0 52px;background:#06121f;color:#e8f3f6;border-bottom:1px solid #1f4152}
 .section-hero:after{content:"";position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,transparent,#5ee4cf66,transparent)}
 .section-hero .parallax-backdrop{opacity:.62;background-size:cover;background-position:center}
-.hero-art-tape{background-image:linear-gradient(90deg,rgba(5,17,29,.97) 0%,rgba(5,17,29,.88) 52%,rgba(5,17,29,.55) 100%),url('assets/bg/tape.jpg')}
+.hero-art-tape{background-image:linear-gradient(90deg,rgba(5,17,29,.96) 0%,rgba(5,17,29,.72) 45%,rgba(5,17,29,.15) 100%),url('assets/bands/band-squawkhero.webp');background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
 .hero-art-dom{background-image:linear-gradient(90deg,rgba(5,17,29,.97) 0%,rgba(5,17,29,.88) 52%,rgba(5,17,29,.55) 100%),url('assets/bg/dom.jpg')}
 .hero-art-scanner{background-image:linear-gradient(90deg,rgba(5,17,29,.97) 0%,rgba(5,17,29,.88) 52%,rgba(5,17,29,.6) 100%),url('assets/bg/scanner.jpg')}
 .hero-art-copilot{background-image:linear-gradient(90deg,rgba(5,17,29,.97) 0%,rgba(5,17,29,.88) 52%,rgba(5,17,29,.55) 100%),url('assets/bg/copilot.jpg')}
@@ -170,7 +170,7 @@ h1,h2,h3,h4,.membership-price,.brand{font-family:var(--font-display)}
 .section-hero .feature-stat.highlights ul li:before{color:#5ee4cf}
 .section-hero .feature-stat.highlights ol li:before{background:#12404a;color:#5ee4cf}
 .feature-section.has-hero>.wrap>.feature-block:first-child{margin-top:64px}
-@media(max-width:650px){.section-hero{padding:72px 0 56px}.hero-grid>div[data-drift],.section-hero>.wrap[data-drift]{transform:none!important}}
+@media(max-width:650px){.section-hero{padding:48px 0 40px}.hero-grid>div[data-drift],.section-hero>.wrap[data-drift]{transform:none!important}}
 @media(prefers-reduced-motion:reduce){[data-drift]{transform:none!important}}
 
 /* Raleway thin system: fine display weights, readable body, lining numerals for prices. */
@@ -298,6 +298,22 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 .pd-body .pd-disclaimer{font-size:var(--fs-footnote);color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:22px}
 @media(max-width:650px){.product{height:auto;min-height:0}.pd-head{padding:18px 18px 14px}.pd-body{padding:4px 18px 22px}}
 /* PRODUCT-DETAILS-CSS:END */
+
+/* FEATURE-BANDS:START */
+.feature-band{position:relative;margin:56px 0 8px;min-height:300px;border-radius:20px;overflow:hidden;background:#05111d var(--band) right center/cover no-repeat;box-shadow:0 24px 60px rgba(5,17,29,.28);display:flex;align-items:center}
+.feature-band figcaption{position:relative;max-width:440px;padding:40px 44px;color:#e8f3f6}
+.feature-band .kicker{display:block;color:#5ee4cf;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.feature-band b{display:block;font-weight:300;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-.01em;color:#fff}
+.feature-band figcaption>span:last-child{display:block;margin-top:12px;color:#b4c8d1;font-size:16px;line-height:1.5}
+.band-wrap{padding-top:8px;padding-bottom:8px}
+.squawk-block{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);column-gap:40px;align-items:start}
+.squawk-block>*{grid-column:1}
+.squawk-block>.squawk-side{grid-column:2;grid-row:1 / span 6;margin:0;position:sticky;top:96px}
+.squawk-side img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 18px 50px rgba(0,0,0,.35);border:1px solid rgba(94,228,207,.25)}
+.squawk-side figcaption{font-size:13px;color:#8fb3c0;margin-top:10px}
+@media (max-width:820px){.feature-band{min-height:240px;background-position:70% center}.feature-band figcaption{padding:28px 24px;background:linear-gradient(90deg,rgba(5,17,29,.92),rgba(5,17,29,.55))}.squawk-block{display:block}.squawk-block>.squawk-side{position:static;margin:0 0 20px}}
+.hero-body{max-width:860px;margin:44px 0 0}.hero-body p{font-size:18px;line-height:1.65;margin:0 0 14px}
+/* FEATURE-BANDS:END */
 </style>
 </head>
 <body>
@@ -331,14 +347,13 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 
 <section id="addons" class="workflow"><div class="wrap"><div class="sectionhead"><div class="kicker">B4 NinjaTrader 8 toolkit</div><h2>Three NinjaTrader 8 add-ons. Included with your membership.</h2><p>B4 Tape, B4 L2 DOM Pro and B4 Scanner work together as one NinjaTrader 8 toolkit for market information, execution and scanning, all included with Monthly, Quarterly and Annual B4 memberships.</p></div><div class="pathways"><a class="path" href="#b4-tape"><span class="addon-tag">NinjaTrader 8 add-on · Included with recurring memberships</span><span class="pathicon">TP</span><h3>B4 Tape</h3><p>Market levels, signals, order-flow evidence, and context in an informational workspace.</p><span class="textlink">Explore B4 Tape →</span></a><a class="path" href="#b4-dom"><span class="addon-tag">NinjaTrader 8 add-on · Included with recurring memberships</span><span class="pathicon">DOM</span><h3>B4 L2 DOM Pro</h3><p>Depth-of-market and trade-management interface for controlled interaction with orders and positions.</p><span class="textlink">Explore B4 L2 DOM Pro →</span></a><a class="path" href="#b4-scanner"><span class="addon-tag">NinjaTrader 8 add-on · Included with recurring memberships</span><span class="pathicon">SC</span><h3>B4 Scanner <span class="status planned">New add-on</span></h3><p>Scan supported markets and surface potential opportunities using B4 signals and conditions.</p><span class="textlink">Explore B4 Scanner →</span></a></div><p class="toolkit-note"><strong>Already a B4 member?</strong> Your current B4 installs stay yours. Move to a Monthly, Quarterly or Annual membership to add the full NinjaTrader 8 toolkit and the newest B4 tools.</p></div></section>
 <section id="b4-tape" class="feature-section has-hero dark" aria-labelledby="tape-title"><div class="section-hero" data-parallax-section><div class="parallax-backdrop hero-art-tape" data-parallax="0.18" aria-hidden="true"></div><div class="wrap" data-drift="0.05"><div class="feature-intro"><div><div class="kicker">B4 Tape · NinjaTrader 8 add-on</div><h2 id="tape-title">Hear the Market. Learn the Auction. <em>Understand the Evidence Behind Every Move.</em></h2>
-<h3>More Than a Tape Reader — Your Audio-Powered Market Education System</h3>
-<p>B4 Tape is a specialized NinjaTrader 8 add-on built around a powerful idea: traders should learn to understand what the market is doing, why it matters, and how the evidence connects to their trading system.</p>
+<h3>More Than a Tape Reader — Your Audio-Powered Market Education System</h3></div>
+<div class="feature-stat" aria-hidden="true"><b>130+</b><span>absorption &amp; market-microstructure setups</span><small>Audio Squawk Box · Tape-reading coach</small></div></div></div></div>
+<div class="wrap"><div class="hero-body"><p>B4 Tape is a specialized NinjaTrader 8 add-on built around a powerful idea: traders should learn to understand what the market is doing, why it matters, and how the evidence connects to their trading system.</p>
 <p>Its integrated Audio Squawk Box and tape-reading coach brings market commentary and educational analysis together, connecting Auction Market Theory, footprint reading, volume and TPO profiling, market microstructure, Ichimoku, and the broader B4 methodology.</p>
 <p>With an educational framework encompassing 130+ absorption and market-microstructure setups, B4 Tape is designed to help traders understand relationships between indicators, price levels, order flow, and developing market conditions—not simply react to isolated alerts.</p></div>
-<div class="feature-stat" aria-hidden="true"><b>130+</b><span>absorption &amp; market-microstructure setups</span><small>Audio Squawk Box · Tape-reading coach</small></div></div></div></div>
-<div class="wrap">
 
-<div class="feature-block"><h3>The Audio Squawk Box — Learn to Read the Market</h3><p class="feature-lead">The squawk box is the centerpiece of B4 Tape. Its purpose goes beyond announcing that a signal fired: it helps explain the relevant evidence and reinforce the principles used to interpret it.</p>
+<div class="feature-block squawk-block"><figure class="squawk-side"><img src="assets/bands/squawk-side.webp" alt="B4 Tape audio squawk box: spoken order-flow calls over the live tape" width="780" height="440" loading="lazy" decoding="async"><figcaption>The squawk box talks you through the tape: absorption, large prints, tape speed.</figcaption></figure><h3>The Audio Squawk Box — Learn to Read the Market</h3><p class="feature-lead">The squawk box is the centerpiece of B4 Tape. Its purpose goes beyond announcing that a signal fired: it helps explain the relevant evidence and reinforce the principles used to interpret it.</p>
 <div class="feature-grid">
 <div class="feature-card"><h4>Auction Market Theory</h4><p>Study acceptance, rejection, balance, imbalance, price discovery, and the ongoing auction between buyers and sellers.</p></div>
 <div class="feature-card"><h4>B4 System Analysis</h4><p>Understand how B4 indicators and compatible signals contribute to a broader analytical picture.</p></div>
@@ -350,7 +365,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <div class="feature-card"><h4>Confluence-Based Learning</h4><p>Understand how multiple pieces of evidence can reinforce, weaken, or contradict a developing market scenario.</p></div>
 </div></div>
 
-<div class="feature-block feature-split"><div><h3>130+ Absorption and Market-Microstructure Setups</h3><p class="feature-tagline">Recognize the interaction. Understand the context. Evaluate the confirmation.</p>
+<figure class="feature-band" style="--band:url('assets/bands/band-footprint.webp')"><figcaption><span class="kicker">B4 Tape · order flow</span><b>Read the footprint behind every move.</b><span>Absorption, imbalances and exhaustion, explained as they happen.</span></figcaption></figure><div class="feature-block feature-split"><div><h3>130+ Absorption and Market-Microstructure Setups</h3><p class="feature-tagline">Recognize the interaction. Understand the context. Evaluate the confirmation.</p>
 <p>B4 Tape's educational framework encompasses more than 130 absorption and market-microstructure setups built around the indicators and market information available on your chart.</p>
 <p>Rather than evaluating each signal in isolation, these setups focus on relationships among price action, order flow, market structure, and the B4 analytical ecosystem.</p>
 <p>The objective is to help traders understand what evidence is present, what confirmation may be missing, and when conflicting signals warrant caution.</p></div>
@@ -394,13 +409,12 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 </div></section>
 
 <section id="b4-dom" class="feature-section has-hero" aria-labelledby="dom-title"><div class="section-hero" data-parallax-section><div class="parallax-backdrop hero-art-dom" data-parallax="0.18" aria-hidden="true"></div><div class="wrap" data-drift="0.05"><div class="feature-intro"><div><div class="kicker">B4 L2 DOM Pro · NinjaTrader 8 add-on</div><h2 id="dom-title">See the Liquidity. Read the Order Flow. <em>Manage the Trade.</em></h2>
-<h3>B4 Order Flow + Liquidity + Execution</h3>
-<p>Built for traders who work directly from the order book, B4 L2 DOM Pro is designed to help you examine the relationship between resting liquidity, executed buying and selling, and the market's response as price moves through important levels.</p>
-<p>It brings together the information needed to assess the order book, monitor changing liquidity, and manage supported trading actions within the NinjaTrader environment.</p></div>
+<h3>B4 Order Flow + Liquidity + Execution</h3></div>
 <div class="feature-stat highlights"><span class="hl-title">Inside B4 L2 DOM Pro</span><ul><li>Level II market depth and liquidity</li><li>Executed order flow and absorption</li><li>Hands-on trade-management controls</li></ul></div></div></div></div>
-<div class="wrap">
+<div class="wrap"><div class="hero-body"><p>Built for traders who work directly from the order book, B4 L2 DOM Pro is designed to help you examine the relationship between resting liquidity, executed buying and selling, and the market's response as price moves through important levels.</p>
+<p>It brings together the information needed to assess the order book, monitor changing liquidity, and manage supported trading actions within the NinjaTrader environment.</p></div>
 
-<div class="feature-block"><h3>Read the Liquidity Behind the Market</h3><p class="feature-lead">Understand how the resting order book changes as buyers and sellers compete for price.</p>
+<figure class="feature-band" style="--band:url('assets/bands/band-dom.webp')"><figcaption><span class="kicker">B4 L2 DOM Pro</span><b>See the liquidity before price gets there.</b><span>Resting bids and offers, liquidity walls and order-book imbalance at every level.</span></figcaption></figure><div class="feature-block"><h3>Read the Liquidity Behind the Market</h3><p class="feature-lead">Understand how the resting order book changes as buyers and sellers compete for price.</p>
 <div class="feature-grid">
 <div class="feature-card"><h4>Level II Market Depth</h4><p>Examine bid and ask liquidity across available price levels.</p></div>
 <div class="feature-card"><h4>Stacking and Pulling</h4><p>Observe changes in displayed liquidity as orders accumulate or are removed.</p></div>
@@ -448,14 +462,13 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 </div></section>
 
 <section id="b4-scanner" class="feature-section has-hero dark" aria-labelledby="scanner-title"><div class="section-hero" data-parallax-section><div class="parallax-backdrop hero-art-scanner" data-parallax="0.18" aria-hidden="true"></div><div class="wrap" data-drift="0.05"><div class="feature-intro"><div><div class="kicker">B4 Scanner · NinjaTrader 8 add-on</div><h2 id="scanner-title">Scan the Market. Discover Opportunities. <em>Focus on the Setups That Matter.</em></h2>
-<h3>More Than a Market Scanner — Your Gateway to the B4 Trading System</h3>
-<p>B4 Scanner is a specialized NinjaTrader 8 add-on designed to help traders monitor instruments, identify developing market conditions, and surface potential trading scenarios using the B4 analytical ecosystem.</p>
+<h3>More Than a Market Scanner — Your Gateway to the B4 Trading System</h3></div>
+<div class="feature-stat highlights"><span class="hl-title">Inside B4 Scanner</span><ul><li>Multi-instrument monitoring</li><li>B4 signal and condition detection</li><li>Confluence-based prioritization</li></ul></div></div></div></div>
+<div class="wrap"><div class="hero-body"><p>B4 Scanner is a specialized NinjaTrader 8 add-on designed to help traders monitor instruments, identify developing market conditions, and surface potential trading scenarios using the B4 analytical ecosystem.</p>
 <p>Instead of manually reviewing every instrument and indicator, B4 Scanner is designed to organize relevant market information into a focused view, helping traders recognize where conditions may warrant closer attention.</p>
 <p>By bringing compatible B4 signals and market-analysis criteria together, the scanner helps connect broad market monitoring with deeper chart-based evaluation.</p></div>
-<div class="feature-stat highlights"><span class="hl-title">Inside B4 Scanner</span><ul><li>Multi-instrument monitoring</li><li>B4 signal and condition detection</li><li>Confluence-based prioritization</li></ul></div></div></div></div>
-<div class="wrap">
 
-<div class="feature-block"><h3>Scan for Market Opportunities</h3>
+<figure class="feature-band" style="--band:url('assets/bands/band-scanner.webp')"><figcaption><span class="kicker">B4 Scanner</span><b>Every market. One view.</b><span>Multi-instrument monitoring that surfaces the setups worth a closer look.</span></figcaption></figure><div class="feature-block"><h3>Scan for Market Opportunities</h3>
 <div class="feature-grid">
 <div class="feature-card"><h4>Multi-Instrument Monitoring</h4><p>Review supported instruments and identify those meeting configured scanning criteria.</p></div>
 <div class="feature-card"><h4>B4 Signal Detection</h4><p>Surface available B4 signals and analytical conditions where supported by the integrated indicators.</p></div>
@@ -487,13 +500,12 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 </div></section>
 
 <section id="b4-copilot" class="feature-section has-hero" aria-labelledby="copilot-title"><div class="section-hero" data-parallax-section><div class="parallax-backdrop hero-art-copilot" data-parallax="0.18" aria-hidden="true"></div><div class="wrap" data-drift="0.05"><div class="feature-intro"><div><div class="kicker">B4 CoPilot Pro · Strategy execution engine · NinjaTrader 8</div><h2 id="copilot-title">The B4 Strategy Execution Engine. <em>Signals In. Discipline Out.</em></h2>
-<h3>Configurable Trade Assistance. Intelligent Order Flow. Integrated Indicator Signals.</h3>
-<p>B4 CoPilot Pro is the strategy execution engine of the B4 Signals ecosystem for NinjaTrader 8. It brings together supported order-flow signals, market-condition filters, trend analysis, indicator-generated signals, and trade-management controls so traders can configure and run trading workflows around their own rules.</p>
-<p>Through B4 API integration, CoPilot Pro can consume supported indicator signals exposed through the API, allowing compatible indicators to contribute their signals and confirmation information to the execution workflow—without requiring every signal source to be a native CoPilot Pro indicator.</p></div>
+<h3>Configurable Trade Assistance. Intelligent Order Flow. Integrated Indicator Signals.</h3></div>
 <div class="feature-stat highlights"><span class="hl-title">From signal to execution</span><ol><li><b>Signal</b>Compatible B4 indicators and order flow</li><li><b>Confirm</b>Filters and multi-signal conditions</li><li><b>Execute</b>Your configured rules and trade management</li></ol></div></div></div></div>
-<div class="wrap">
+<div class="wrap"><div class="hero-body"><p>B4 CoPilot Pro is the strategy execution engine of the B4 Signals ecosystem for NinjaTrader 8. It brings together supported order-flow signals, market-condition filters, trend analysis, indicator-generated signals, and trade-management controls so traders can configure and run trading workflows around their own rules.</p>
+<p>Through B4 API integration, CoPilot Pro can consume supported indicator signals exposed through the API, allowing compatible indicators to contribute their signals and confirmation information to the execution workflow—without requiring every signal source to be a native CoPilot Pro indicator.</p></div>
 
-<div class="feature-block"><h3>Core Capabilities</h3><p class="feature-lead">CoPilot Pro connects analysis to action, evaluating each incoming signal against the conditions you define before a workflow responds.</p>
+<figure class="feature-band" style="--band:url('assets/bands/band-copilot.webp')"><figcaption><span class="kicker">B4 CoPilot Pro</span><b>Signal. Confirm. Execute.</b><span>B4 signals and order flow, confirmed and run under your rules.</span></figcaption></figure><div class="feature-block"><h3>Core Capabilities</h3><p class="feature-lead">CoPilot Pro connects analysis to action, evaluating each incoming signal against the conditions you define before a workflow responds.</p>
 <div class="feature-grid">
 <div class="feature-card"><h4>B4 API Indicator Integration</h4><p>Connects compatible indicator signals exposed through the B4 API to CoPilot Pro workflows, so indicator-generated signals contribute to analysis and trade-condition evaluation.</p></div>
 <div class="feature-card"><h4>Extensible Signal Sources</h4><p>Works with multiple compatible indicator signal providers, subject to API compatibility and signal definitions.</p></div>
@@ -521,11 +533,10 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <p class="feature-disclaimer">For educational purposes only. Not trading advice. Trading involves substantial risk. Indicator signals, filters, and automated or assisted workflows do not guarantee fills, execution quality, or profitable results. Features may vary by release.</p>
 </div></section>
 <section id="b4-funding" class="feature-section dark has-hero" aria-labelledby="funding-title"><div class="section-hero" data-parallax-section><div class="parallax-backdrop hero-art-funding" data-parallax="0.18" aria-hidden="true"></div><div class="wrap" data-drift="0.05"><div class="feature-intro"><div><div class="kicker">B4 Funding · The future of prop trading</div><h2 id="funding-title">Supercharge Your Prop Firm Career <em>with B4 Funding.</em></h2>
-<h3>Learn. Simulate. Prove it. Get funded.</h3>
-<p>B4 Funding is your gateway to elite trading, equipping you with institutional-grade tools, intelligent automation and expert-led training. It is the advanced futures prop desk of the B4 ecosystem, with community features and interactive learning built in.</p>
-<p>Join the movement redefining what it means to trade funded.</p></div>
+<h3>Learn. Simulate. Prove it. Get funded.</h3></div>
 <div class="feature-stat highlights"><span class="hl-title">Built for funded traders</span><ul><li>B4 CoPilot Pro executes your rules with discipline</li><li>B4 L2 DOM Pro keeps stops, targets and flatten one click away</li><li>B4 Tape explains every move as it happens</li></ul></div></div></div></div>
-<div class="wrap">
+<div class="wrap"><div class="hero-body"><p>B4 Funding is your gateway to elite trading, equipping you with institutional-grade tools, intelligent automation and expert-led training. It is the advanced futures prop desk of the B4 ecosystem, with community features and interactive learning built in.</p>
+<p>Join the movement redefining what it means to trade funded.</p></div>
 <div class="feature-block"><h3>Your path to B4 Funding</h3><p class="feature-lead">A structured, performance-driven path from your first lesson to trading capital under the B4 banner.</p>
 <div class="feature-grid">
 <div class="feature-card"><h4>01 · Learn</h4><p>Master the B4 methodology, from original Ichimoku structure to order flow, footprint and volume profile, through the self-paced B4 AMP education program.</p></div>
@@ -536,7 +547,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <div class="feature-block"><div class="actions"><a class="btn" href="#black-friday">Choose your membership ↗</a><a class="btn lightoutline" href="#b4-copilot">See B4 CoPilot Pro</a></div></div>
 <p class="feature-disclaimer">For educational purposes only. Not trading advice. Funding eligibility is based on evaluation results and B4 Funding program criteria; no participant is guaranteed funding, capital allocation or profits. Trading involves substantial risk.</p>
 </div></section>
-<section id="workflow" class="workflow"><div class="wrap split"><div><div class="kicker">How B4 fits together</div><h2>One ecosystem. Every edge covered.</h2><p>Every B4 tool has a job, and together they turn market noise into a clear, repeatable process: read the market, see the order flow, find the setup, and execute with discipline.</p><p style="margin-top:14px">And this Black Friday, B4 Quantum brings it all together in one AI trade desk.</p><p style="margin-top:18px"><a class="btn dark" href="#products">Explore the B4 lineup ↗</a></p></div><div class="steps">
+<div class="wrap band-wrap"><figure class="feature-band" style="--band:url('assets/bands/band-funding.webp')"><figcaption><span class="kicker">B4 Funding</span><b>Learn it. Prove it. Get funded.</b><span>Education, simulation and evaluation in one B4 path.</span></figcaption></figure></div><section id="workflow" class="workflow"><div class="wrap split"><div><div class="kicker">How B4 fits together</div><h2>One ecosystem. Every edge covered.</h2><p>Every B4 tool has a job, and together they turn market noise into a clear, repeatable process: read the market, see the order flow, find the setup, and execute with discipline.</p><p style="margin-top:14px">And this Black Friday, B4 Quantum brings it all together in one AI trade desk.</p><p style="margin-top:18px"><a class="btn dark" href="#products">Explore the B4 lineup ↗</a></p></div><div class="steps">
 <div class="step"><span class="num">01</span><div><h3>Read the market</h3><p>B4 Algo, Shoyu, Squeeze, Wave and the B4 PY Indicator map trend, Ichimoku structure, compression and P and Y patterns, so you know the conditions before you place a trade.</p></div></div>
 <div class="step"><span class="num">02</span><div><h3>See the order flow</h3><p>B4 Footprint Pro, Volume Profile and CVD reveal who is in control at every price, while B4 Tape talks you through the evidence with its audio squawk box.</p></div></div>
 <div class="step"><span class="num">03</span><div><h3>Find the setup</h3><p>B4 Scanner surfaces the instruments worth your attention, and B4 L2 DOM Pro shows you the liquidity waiting at every level.</p></div></div>
