@@ -270,6 +270,9 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 
 
 
+
+.founder-card{display:flex;gap:28px;align-items:center;padding:32px;border:1px solid var(--line,#dfe6ea);border-radius:16px;background:#fff;max-width:860px;margin:0 auto}.founder-photo{width:132px;height:132px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 8px 24px rgba(5,22,34,.18)}.founder-card h2{margin:4px 0 2px}.founder-role{margin:0 0 10px;color:#5b7180;font-size:15px}@media(max-width:640px){.founder-card{flex-direction:column;text-align:center;padding:24px}}
+.foot-email{margin:10px 0 0;font-size:14px}.foot-email a{color:inherit;text-decoration:underline}
 /* PRODUCT-DETAILS-CSS:START */
 /* Cards stay one fixed size; short copy is capped at 4 lines. */
 .product{cursor:pointer;height:400px;min-height:0}
@@ -295,7 +298,6 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 .pd-body .pd-disclaimer{font-size:var(--fs-footnote);color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:22px}
 @media(max-width:650px){.product{height:auto;min-height:0}.pd-head{padding:18px 18px 14px}.pd-body{padding:4px 18px 22px}}
 /* PRODUCT-DETAILS-CSS:END */
-.founder-card{display:flex;gap:28px;align-items:center;padding:32px;border:1px solid var(--line,#dfe6ea);border-radius:16px;background:#fff;max-width:860px;margin:0 auto}.founder-photo{width:132px;height:132px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 8px 24px rgba(5,22,34,.18)}.founder-card h2{margin:4px 0 2px}.founder-role{margin:0 0 10px;color:#5b7180;font-size:15px}@media(max-width:640px){.founder-card{flex-direction:column;text-align:center;padding:24px}}
 </style>
 </head>
 <body>
@@ -559,7 +561,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <a class="btn dark" data-affiliate-signup href="#" hidden>Become an affiliate ↗</a></div></div></section>
 <section id="learn"><div class="wrap"><div class="sectionhead"><div class="kicker">Learn &amp; explore</div><h2>Learn the tools. Sharpen your edge.</h2><p>See what each B4 tool does, which platforms it supports, and what's arriving this Black Friday.</p></div><div class="resources"><article class="resource"><div class="kicker">Product guides</div><h3>How B4 tools work</h3><p>Open any product for its full description, then see the tools in action in NinjaTrader 8.</p><a class="textlink" href="#products">Browse products <span>→</span></a></article><article class="resource"><div class="kicker">Platform support</div><h3>Choose the right platform</h3><p>See which tools run on TradingView, NinjaTrader 8, or both.</p><a class="textlink" href="#platforms">View platforms <span>→</span></a></article><article class="resource"><div class="kicker">Coming Black Friday</div><h3>Meet B4 Quantum</h3><p>See how the AI Automated Trade Desk connects the entire B4 ecosystem.</p><a class="textlink" href="#roadmap">See what's next <span>→</span></a></article></div></div></section>
 <section id="founder" aria-labelledby="founder-title"><div class="wrap"><div class="founder-card"><img class="founder-photo" src="assets/brand/founder.jpg" alt="Chuck Edwards, founder of B4 Signals" width="200" height="200" loading="lazy" decoding="async"><div><div class="kicker">Meet the founder</div><h2 id="founder-title">Chuck Edwards</h2><p class="founder-role">Founder, B4 Signals</p><p>B4 Signals builds the indicators, order-flow tools, strategy execution engine and education that B4 members use in NinjaTrader 8 and TradingView.</p></div></div></div></section>
-<section id="contact"><div class="wrap"><div class="contactband"><div><div class="kicker">B4 Signals</div><h2>Find the right tools for your workflow.</h2><p>Explore the B4 lineup and choose the membership that fits your trading.</p></div><div class="actions" style="margin-top:0"><a class="btn dark" href="#products">Explore products ↗</a></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="contactband"><div><div class="kicker">B4 Signals</div><h2>Find the right tools for your workflow.</h2><p>Explore the B4 lineup and choose the membership that fits your trading.</p></div><div class="actions" style="margin-top:0"><a class="btn dark" href="#products">Explore products ↗</a><a class="btn" href="mailto:info@b4signals.com">Email info@b4signals.com</a></div></div></div></section>
 </main>
 <!-- PRODUCT-DETAILS:START -->
 <dialog id="productDialog" class="pd" aria-labelledby="pdTitle"><div class="pd-head"><div><div class="kicker" id="pdStatus"></div><h2 id="pdTitle"></h2><div class="pills" id="pdPills"></div><a class="pd-page" id="pdPage" href="#">Open the full product page ↗</a></div><button type="button" class="pd-close" id="pdClose" aria-label="Close">✕</button></div><div class="pd-body" id="pdBody"></div></dialog>
@@ -724,10 +726,11 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 
 
 
+
 <footer id="site-footer"><div class="wrap">
 <div class="foot-top">
 <div class="foot-brand"><a class="brand" href="#home" aria-label="B4 Signals home"><span class="mark">B4</span><span>B4 SIGNALS<small>TRADING TECHNOLOGY</small></span></a>
-<p>Evolving beyond indicators. Building toward intelligent trading technology.</p>
+<p>Evolving beyond indicators. Building toward intelligent trading technology.</p><p class="foot-email">Contact: <a href="mailto:info@b4signals.com">info@b4signals.com</a></p>
 <div class="socials"><a class="social" href="https://www.facebook.com/B4signals/" target="_blank" rel="noopener" aria-label="B4 Signals on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.5h-2.8C11.1 2.5 10.4 4.8 10.4 6.3v2.2H8v3.4h2.4V21.5H14V11.9h2.7l.4-3.4z"/></svg></a><a class="social" href="https://x.com/B4SignalsPro" target="_blank" rel="noopener" aria-label="B4 Signals on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a><a class="social" href="https://www.youtube.com/@B4_Signals" target="_blank" rel="noopener" aria-label="B4 Signals on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 7.2a2.8 2.8 0 0 0-2-2C18.8 4.8 12 4.8 12 4.8s-6.8 0-8.5.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.7.4 8.5.4 8.5.4s6.8 0 8.5-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-4.8zM9.8 15.1V8.9l5.7 3.1z"/></svg></a></div></div>
 <nav class="foot-col" aria-label="B4 Signals"><h3>B4 Signals</h3><a href="#home">Home</a><a href="#products">Products</a><a href="#b4-copilot">B4 CoPilot Pro</a><a href="#roadmap">Roadmap</a><a href="#b4-funding">B4 Funding</a><a href="#affiliates">Affiliate Program</a></nav>
 <nav class="foot-col" aria-label="Legal"><h3>Legal</h3><a href="legal/terms-and-conditions.html">Terms and Conditions</a><a href="legal/refund-policy.html">Refund Policy</a><a href="legal/privacy-policy.html">Privacy Policy</a><a href="legal/confidentiality-agreement.html">Confidentiality Agreement</a><a href="legal/cancel-subscription.html">Cancel Subscription</a></nav>
@@ -809,6 +812,7 @@ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('cl
   if (mobile.addEventListener) mobile.addEventListener('change', requestUpdate);
   updateParallax();
 })();
+
 
 
 
