@@ -273,6 +273,23 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 
 .founder-card{display:flex;gap:28px;align-items:center;padding:32px;border:1px solid var(--line,#dfe6ea);border-radius:16px;background:#fff;max-width:860px;margin:0 auto}.founder-photo{width:132px;height:132px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 8px 24px rgba(5,22,34,.18)}.founder-card h2{margin:4px 0 2px}.founder-role{margin:0 0 10px;color:#5b7180;font-size:15px}@media(max-width:640px){.founder-card{flex-direction:column;text-align:center;padding:24px}}
 .foot-email{margin:10px 0 0;font-size:14px}.foot-email a{color:inherit;text-decoration:underline}
+
+
+/* FEATURE-BANDS:START */
+.feature-band{position:relative;margin:56px 0 8px;min-height:300px;border-radius:20px;overflow:hidden;background:#05111d var(--band) right center/cover no-repeat;box-shadow:0 24px 60px rgba(5,17,29,.28);display:flex;align-items:center}
+.feature-band figcaption{position:relative;max-width:440px;padding:40px 44px;color:#e8f3f6}
+.feature-band .kicker{display:block;color:#5ee4cf;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.feature-band b{display:block;font-weight:300;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-.01em;color:#fff}
+.feature-band figcaption>span:last-child{display:block;margin-top:12px;color:#b4c8d1;font-size:16px;line-height:1.5}
+.band-wrap{padding-top:8px;padding-bottom:8px}
+.squawk-block{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);column-gap:40px;align-items:start}
+.squawk-block>*{grid-column:1}
+.squawk-block>.squawk-side{grid-column:2;grid-row:1 / span 6;margin:0;position:sticky;top:96px}
+.squawk-side img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 18px 50px rgba(0,0,0,.35);border:1px solid rgba(94,228,207,.25)}
+.squawk-side figcaption{font-size:13px;color:#8fb3c0;margin-top:10px}
+@media (max-width:820px){.feature-band{min-height:240px;background-position:70% center}.feature-band figcaption{padding:28px 24px;background:linear-gradient(90deg,rgba(5,17,29,.92),rgba(5,17,29,.55))}.squawk-block{display:block}.squawk-block>.squawk-side{position:static;margin:0 0 20px}}
+.hero-body{max-width:860px;margin:44px 0 0}.hero-body p{font-size:18px;line-height:1.65;margin:0 0 14px}
+/* FEATURE-BANDS:END */
 /* PRODUCT-DETAILS-CSS:START */
 /* Cards stay one fixed size; short copy is capped at 4 lines. */
 .product{cursor:pointer;height:400px;min-height:0}
@@ -298,22 +315,6 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 .pd-body .pd-disclaimer{font-size:var(--fs-footnote);color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:22px}
 @media(max-width:650px){.product{height:auto;min-height:0}.pd-head{padding:18px 18px 14px}.pd-body{padding:4px 18px 22px}}
 /* PRODUCT-DETAILS-CSS:END */
-
-/* FEATURE-BANDS:START */
-.feature-band{position:relative;margin:56px 0 8px;min-height:300px;border-radius:20px;overflow:hidden;background:#05111d var(--band) right center/cover no-repeat;box-shadow:0 24px 60px rgba(5,17,29,.28);display:flex;align-items:center}
-.feature-band figcaption{position:relative;max-width:440px;padding:40px 44px;color:#e8f3f6}
-.feature-band .kicker{display:block;color:#5ee4cf;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
-.feature-band b{display:block;font-weight:300;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-.01em;color:#fff}
-.feature-band figcaption>span:last-child{display:block;margin-top:12px;color:#b4c8d1;font-size:16px;line-height:1.5}
-.band-wrap{padding-top:8px;padding-bottom:8px}
-.squawk-block{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);column-gap:40px;align-items:start}
-.squawk-block>*{grid-column:1}
-.squawk-block>.squawk-side{grid-column:2;grid-row:1 / span 6;margin:0;position:sticky;top:96px}
-.squawk-side img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 18px 50px rgba(0,0,0,.35);border:1px solid rgba(94,228,207,.25)}
-.squawk-side figcaption{font-size:13px;color:#8fb3c0;margin-top:10px}
-@media (max-width:820px){.feature-band{min-height:240px;background-position:70% center}.feature-band figcaption{padding:28px 24px;background:linear-gradient(90deg,rgba(5,17,29,.92),rgba(5,17,29,.55))}.squawk-block{display:block}.squawk-block>.squawk-side{position:static;margin:0 0 20px}}
-.hero-body{max-width:860px;margin:44px 0 0}.hero-body p{font-size:18px;line-height:1.65;margin:0 0 14px}
-/* FEATURE-BANDS:END */
 </style>
 </head>
 <body>
@@ -402,7 +403,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <div class="feature-panel"><h3>A Dedicated NinjaTrader 8 Add-On</h3>
 <p>B4 Tape operates as an informational and analytical add-on within the B4 Signals ecosystem. It complements the trader's existing chart and execution environment while keeping its role separate from order management.</p></div></div>
 
-<div class="feature-block shots-block" data-shots><h3>See B4 Tape in NinjaTrader 8</h3><div class="shot-gallery"><figure class="shot shot-wide"><a href="assets/shots/tape-teach.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Tape window showing big trades, levels, the price ladder, trade decision panel and teaching lessons"><img src="assets/shots/tape-teach.webp" width="1285" height="742" alt="B4 Tape window showing big trades, levels, the price ladder, trade decision panel and teaching lessons" loading="lazy" decoding="async"></a><figcaption>B4 Tape with the teaching panel: levels, ladder, big trades and the Stage 1 lesson track.</figcaption></figure><figure class="shot"><a href="assets/shots/tape-memory.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Tape window with the time and sales list, ladder and the B4 Event Memory panel"><img src="assets/shots/tape-memory.webp" width="1296" height="1040" alt="B4 Tape window with the time and sales list, ladder and the B4 Event Memory panel" loading="lazy" decoding="async"></a><figcaption>B4 Event Memory tracking an unfinished auction (poor high) and explaining exactly why it is not confirmed yet.</figcaption></figure><figure class="shot"><a href="assets/shots/tape-news.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Tape window with the news and sentiment strip, event memory and trade engine decision panels"><img src="assets/shots/tape-news.webp" width="1280" height="589" alt="B4 Tape window with the news and sentiment strip, event memory and trade engine decision panels" loading="lazy" decoding="async"></a><figcaption>News and sentiment strip, event memory and the trade-engine decision panel side by side.</figcaption></figure></div><p class="shot-note">Screenshots from NinjaTrader 8 on a simulation account (Sim101).</p></div>
+<div class="feature-block shots-block" data-shots><h3>See B4 Tape in NinjaTrader 8</h3><div class="shot-gallery"><figure class="shot shot-wide"><a href="assets/shots/tape-teach.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Tape window showing big trades, levels, the price ladder, trade decision panel and teaching lessons"><img src="assets/viz/tape-teach.webp" width="1600" height="1000" alt="B4 Tape window showing big trades, levels, the price ladder, trade decision panel and teaching lessons" loading="lazy" decoding="async"></a><figcaption>B4 Tape with the teaching panel: levels, ladder, big trades and the Stage 1 lesson track.</figcaption></figure><figure class="shot"><a href="assets/shots/tape-memory.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Tape window with the time and sales list, ladder and the B4 Event Memory panel"><img src="assets/viz/tape-memory.webp" width="1600" height="1000" alt="B4 Tape window with the time and sales list, ladder and the B4 Event Memory panel" loading="lazy" decoding="async"></a><figcaption>B4 Event Memory tracking an unfinished auction (poor high) and explaining exactly why it is not confirmed yet.</figcaption></figure><figure class="shot"><a href="assets/shots/tape-news.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Tape window with the news and sentiment strip, event memory and trade engine decision panels"><img src="assets/viz/tape-news.webp" width="1600" height="1000" alt="B4 Tape window with the news and sentiment strip, event memory and trade engine decision panels" loading="lazy" decoding="async"></a><figcaption>News and sentiment strip, event memory and the trade-engine decision panel side by side.</figcaption></figure></div><p class="shot-note">Enhanced visualizations based on NinjaTrader 8 screens from a simulation account (Sim101).</p></div>
 <div class="addon-buy" data-addon="tape"><div><span class="addon-tag">NinjaTrader 8 add-on</span><b>B4 Tape is included with Monthly, Quarterly and Annual B4 memberships.</b><span>No separate purchase needed. Members get the audio squawk box, 130+ setups and the full lesson tracks.</span></div><a class="btn dark" href="#black-friday">See membership options ↗</a></div>
 <p class="feature-closing">B4 Tape — 130+ setups. A powerful audio squawk box. Deeper understanding of the B4 system and the market auction.</p>
 <p class="feature-disclaimer">For educational and research purposes only. Not trading advice. Market analysis and pattern recognition do not guarantee market direction or profitable outcomes. Features and audio modes may vary by release.</p>
@@ -493,7 +494,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <div class="feature-block"><div class="feature-panel"><h3>Designed for NinjaTrader 8</h3>
 <p>B4 Scanner is a dedicated NinjaTrader 8 add-on—not a standalone web-based scanner or an independent trading platform. The scanning universe, supported indicators, refresh behavior, filters, and output fields are defined for each release.</p></div></div>
 
-<div class="feature-block shots-block" data-shots><h3>See B4 Scanner in NinjaTrader 8</h3><div class="shot-gallery"><figure class="shot shot-wide"><a href="assets/shots/scanner.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Scanner window listing futures instruments with arrow, watchlist, trend and indicator columns"><img src="assets/shots/scanner.webp" width="1291" height="872" alt="B4 Scanner window listing futures instruments with arrow, watchlist, trend and indicator columns" loading="lazy" decoding="async"></a><figcaption>B4 Scanner v3.0 scanning a futures list on closed daily bars. Scan only: it never places, changes or cancels orders.</figcaption></figure></div><p class="shot-note">Screenshots from NinjaTrader 8 on a simulation account (Sim101).</p></div>
+<div class="feature-block shots-block" data-shots><h3>See B4 Scanner in NinjaTrader 8</h3><div class="shot-gallery"><figure class="shot shot-wide"><a href="assets/shots/scanner.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: B4 Scanner window listing futures instruments with arrow, watchlist, trend and indicator columns"><img src="assets/viz/scanner.webp" width="1600" height="1000" alt="B4 Scanner window listing futures instruments with arrow, watchlist, trend and indicator columns" loading="lazy" decoding="async"></a><figcaption>B4 Scanner scanning a futures list on closed daily bars. Scan only: it never places, changes or cancels orders.</figcaption></figure></div><p class="shot-note">Enhanced visualizations based on NinjaTrader 8 screens from a simulation account (Sim101).</p></div>
 <div class="addon-buy" data-addon="scanner"><div><span class="addon-tag">NinjaTrader 8 add-on</span><b>B4 Scanner is included with Monthly, Quarterly and Annual B4 memberships.</b><span>Part of the B4 NinjaTrader 8 toolkit with B4 Tape and B4 L2 DOM Pro. No separate purchase needed.</span></div><a class="btn dark" href="#black-friday">See membership options ↗</a></div>
 <p class="feature-closing">B4 Scanner — Find the conditions. Focus your analysis. Let the evidence guide your next review.</p>
 <p class="feature-disclaimer">For educational and research purposes only. Not trading advice. Scanning results and indicator signals do not guarantee valid setups or profitable outcomes. Features may vary by release.</p>
@@ -528,7 +529,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <li><strong>B4 L2 DOM Pro:</strong> Provides hands-on market depth and trade management.</li>
 </ul></div></div>
 
-<div class="feature-block shots-block" data-shots><h3>See B4 CoPilot Pro in NinjaTrader 8</h3><div class="shot-gallery"><figure class="shot shot-wide"><a href="assets/shots/copilot-trader.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: NinjaTrader 8 chart with B4 footprint bars and the B4 CoPilot Pro Trader and Strategy control panels"><img src="assets/shots/copilot-trader.webp" width="1600" height="962" alt="NinjaTrader 8 chart with B4 footprint bars and the B4 CoPilot Pro Trader and Strategy control panels" loading="lazy" decoding="async"></a><figcaption>B4 CoPilot Pro Trader and Strategy panels beside the footprint chart (Sim101).</figcaption></figure><figure class="shot"><a href="assets/shots/copilot-atm.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: NinjaTrader 8 chart showing sell limit targets and a sell stop managed by the B4 ES Conservative ATM strategy"><img src="assets/shots/copilot-atm.webp" width="1600" height="969" alt="NinjaTrader 8 chart showing sell limit targets and a sell stop managed by the B4 ES Conservative ATM strategy" loading="lazy" decoding="async"></a><figcaption>CoPilot Pro working orders with the B4 ES Conservative ATM strategy: stop and targets on the chart (Sim101).</figcaption></figure><figure class="shot"><a href="assets/shots/copilot-orderflow.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: NinjaTrader 8 chart with B4 footprint, volume profile, TPO levels and the B4 oscillator panel"><img src="assets/shots/copilot-orderflow.webp" width="1600" height="970" alt="NinjaTrader 8 chart with B4 footprint, volume profile, TPO levels and the B4 oscillator panel" loading="lazy" decoding="async"></a><figcaption>B4 order-flow chart: footprint, volume profile, TPO levels and the B4 oscillator, with Chart Trader (Sim101).</figcaption></figure></div><p class="shot-note">Screenshots from NinjaTrader 8 on a simulation account (Sim101).</p></div>
+<div class="feature-block shots-block" data-shots><h3>See B4 CoPilot Pro in NinjaTrader 8</h3><div class="shot-gallery"><figure class="shot shot-wide"><a href="assets/shots/copilot-trader.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: NinjaTrader 8 chart with B4 footprint bars and the B4 CoPilot Pro Trader and Strategy control panels"><img src="assets/viz/copilot-trader.webp" width="1600" height="1000" alt="NinjaTrader 8 chart with B4 footprint bars and the B4 CoPilot Pro Trader and Strategy control panels" loading="lazy" decoding="async"></a><figcaption>B4 CoPilot Pro Trader and Strategy panels beside the footprint chart (Sim101).</figcaption></figure><figure class="shot"><a href="assets/shots/copilot-atm.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: NinjaTrader 8 chart showing sell limit targets and a sell stop managed by the B4 ES Conservative ATM strategy"><img src="assets/viz/copilot-atm.webp" width="1600" height="1000" alt="NinjaTrader 8 chart showing sell limit targets and a sell stop managed by the B4 ES Conservative ATM strategy" loading="lazy" decoding="async"></a><figcaption>CoPilot Pro working orders with the B4 ES Conservative ATM strategy: stop and targets on the chart (Sim101).</figcaption></figure><figure class="shot"><a href="assets/shots/copilot-orderflow.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: NinjaTrader 8 chart with B4 footprint, volume profile, TPO levels and the B4 oscillator panel"><img src="assets/viz/copilot-orderflow.webp" width="1600" height="1000" alt="NinjaTrader 8 chart with B4 footprint, volume profile, TPO levels and the B4 oscillator panel" loading="lazy" decoding="async"></a><figcaption>B4 order-flow chart: footprint, volume profile, TPO levels and the B4 oscillator, with Chart Trader (Sim101).</figcaption></figure></div><p class="shot-note">Enhanced visualizations based on NinjaTrader 8 screens from a simulation account (Sim101).</p></div>
 <p class="feature-closing">B4 CoPilot Pro — Connect indicator signals. Configure confirmation. Execute your strategy with discipline.</p>
 <p class="feature-disclaimer">For educational purposes only. Not trading advice. Trading involves substantial risk. Indicator signals, filters, and automated or assisted workflows do not guarantee fills, execution quality, or profitable results. Features may vary by release.</p>
 </div></section>
@@ -738,6 +739,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 
 
 
+
 <footer id="site-footer"><div class="wrap">
 <div class="foot-top">
 <div class="foot-brand"><a class="brand" href="#home" aria-label="B4 Signals home"><span class="mark">B4</span><span>B4 SIGNALS<small>TRADING TECHNOLOGY</small></span></a>
@@ -823,6 +825,7 @@ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('cl
   if (mobile.addEventListener) mobile.addEventListener('change', requestUpdate);
   updateParallax();
 })();
+
 
 
 
