@@ -1,0 +1,65 @@
+{
+  "_about": "Public B4 testimonials. Customer wording kept except the approved edits and redactions marked with an ellipsis. Originals and the change record are kept privately. Never add invented quotes, names, dates, photos or ratings.",
+  "updated": "2026-10-10",
+  "disclaimer": "Testimonials are from real B4 community members and reflect their own experience. They are not typical or guaranteed results. For educational purposes only. Not trading advice.",
+  "items": [
+    {
+      "id": "truthseeker222",
+      "name": "Truthseeker222",
+      "group": "current",
+      "quote": "“This system really has changed my life.” … “I use all the B4 tools. A little over a year trading with B4 now.” … “If you master this system, it will change the way you see the market, and make you a better all around trader.”",
+      "popup": "If you master this system, it will change the way you see the market, and make you a better all around trader."
+    },
+    {
+      "id": "derekwebb",
+      "name": "derekwebb",
+      "group": "current",
+      "quote": "“Using this system and following its rules, …has absolutely revolutionized my trading. It kept me out of the market all day today until there was a clear setup, then guided me right through it… the B4 system and strategy,… on it's own has been game-changing for me. If you're lurking and considering jumping into VIP, trust me: DO IT.”",
+      "popup": "It kept me out of the market all day today until there was a clear setup, then guided me right through it…"
+    },
+    {
+      "id": "gurukrupa",
+      "name": "Gurukrupa",
+      "group": "current",
+      "quote": "“Have been a part of the B4 One-Time Membership since 2021. B4 Levels, Brackets, Ichimoku, Squeeze, Copilot, Copilot-Pro, B4 bars have been integral part of my Trading system. Plus mentorship from @barbaros and @Chuck have been a great help… Above that, B4 Community is a Family where we share and help each other grow ! Thanks”",
+      "popup": "B4 Community is a Family where we share and help each other grow!"
+    },
+    {
+      "id": "ajd",
+      "name": "AJD",
+      "group": "current",
+      "quote": "“I started using CoPilot on November 12th… Thank you so much @barbaros and @Chuck!!! Because of you guys and the B4 Trading Community, I finally feel like I can accomplish my dream of becoming a full time trader…”",
+      "popup": ""
+    },
+    {
+      "id": "community-control",
+      "name": "Community Member",
+      "group": "current",
+      "quote": "“With the help of the B4 indicator, I am in control of my entries and exits and know what is going on, taking the guess work out of trading makes a massive difference.”",
+      "popup": "With the help of the B4 indicator, I am in control of my entries and exits and know what is going on."
+    },
+    {
+      "id": "community-wow",
+      "name": "Community Member",
+      "group": "current",
+      "quote": "“All I can say is wow! Day Trading is so hard due to the abundance of information out there, but the B4 indicator takes much of it and helps you hone a strategy that fits you.”",
+      "popup": "The B4 indicator takes much of it and helps you hone a strategy that fits you."
+    },
+    {
+      "id": "shootsiescores",
+      "name": "shootsiescores",
+      "group": "historical",
+      "context": "About the former B4 Live Trade Room, which has since been discontinued.",
+      "quote": "“Just want to say thank you for the live trading sessions. Watching you work (even when you are sitting out on a Friday) gives me the patience and confidence to trust the system. It's Friday and a little choppy, so I played a couple quick scalps on the Short Breakout and Go Short…”",
+      "popup": ""
+    },
+    {
+      "id": "bluedevil",
+      "name": "Bluedevil",
+      "group": "historical",
+      "context": "About the former B4 Live Trade Room, which has since been discontinued.",
+      "quote": "“B4signals.com… Chuck and Barb are amazing at what they do...both Invent and live teach both semi and fully automated strategies… I highly recommend this service!”",
+      "popup": ""
+    }
+  ]
+}

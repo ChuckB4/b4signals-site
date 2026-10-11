@@ -337,6 +337,26 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 @media (max-width:640px){#b4-proof{left:12px;bottom:12px}.b4p{padding:12px 14px}}
 @media (prefers-reduced-motion:reduce){.b4p{transition:none}}
 /* SOCIAL-PROOF:END */
+
+/* TESTIMONIALS:START */
+#testimonials{background:var(--navy);color:#e8f3f6}
+#testimonials .kicker{color:#5ee4cf}
+#testimonials h2{color:#fff}
+#testimonials .sectionhead p{color:#a9bfc8}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+.tcard{margin:0;background:#0c2030;border:1px solid #1d3a4c;border-radius:14px;padding:22px 22px 18px;display:flex;flex-direction:column;gap:14px}
+.tcard blockquote{margin:0;font-size:15.5px;line-height:1.6;color:#dbe8ee}
+.tcard figcaption{display:flex;flex-direction:column;gap:3px;font-size:13px;color:#7fa3b0;border-top:1px solid #1d3a4c;padding-top:12px}
+.tcard figcaption b{color:#fff;font-size:14px;font-weight:600}
+.tcard.historical{background:#0a1b29;border-style:dashed}
+.thist{margin-top:34px}
+.thist h3{color:#fff;font-size:18px;margin:0 0 6px}
+.thist>p{color:#a9bfc8;margin:0 0 16px;font-size:14px}
+.tdisc{margin-top:26px;font-size:12.5px;line-height:1.55;color:#7fa3b0;max-width:900px}
+@media (max-width:980px){.tgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.tgrid{grid-template-columns:1fr}.tcard{padding:18px}}
+.b4p.q p{font-style:italic;color:#dbe8ee}
+/* TESTIMONIALS:END */
 </style>
 </head>
 <body>
@@ -593,6 +613,7 @@ footer{background:#06121d;color:#a6bbc5;padding:64px 0 28px;font-size:var(--fs-f
 <section id="roadmap" class="roadmap" data-parallax-section><div class="parallax-backdrop" data-parallax="0.08" aria-hidden="true"></div><div class="wrap"><div class="sectionhead"><div class="kicker" style="color:#60e2cd">Black Friday 2026 · What's next</div><h2>B4 Quantum arrives this Black Friday.</h2><p>The AI Automated Trade Desk brings every B4 tool into one intelligent workspace: AI market briefings, evidence fusion, explainable decisions and automated execution through B4 CoPilot Pro.</p></div><div class="roadmapgrid"><div class="roadcard"><span class="status planned">Coming Black Friday</span><h3>B4 Quantum — AI Automated Trade Desk</h3><p>An AI trade desk built to read the market like a disciplined professional: gather the evidence, weigh it, explain it, and act only when the case is strong enough. Quantum decides, B4 Tape explains, B4 L2 DOM Pro gives you control, and B4 CoPilot Pro executes.</p><p>Behind the desk, the Quantum Research Lab handles strategy research and validation.</p><p class="quantum-upgrade"><strong>Already a B4 member?</strong> Eligible existing members can add B4 Quantum for $50/month.</p><h3 style="margin-top:24px">B4 PY Indicator <span class="status">Now released</span></h3><p>Available now. The B4 PY Indicator draws professional Ichimoku P and Y patterns with Chikou Span analysis and mapped entry, stop and target levels.</p></div><div class="roadsteps"><div class="roadstep"><span class="num">01</span><div><strong>AI Market Briefing</strong><span>A map of the day's key levels, value areas and unfinished auctions before the open.</span></div></div><div class="roadstep"><span class="num">02</span><div><strong>Evidence Fusion Engine</strong><span>Every B4 signal, pattern and order-flow event combined into one scored, explained decision.</span></div></div><div class="roadstep"><span class="num">03</span><div><strong>Automated execution</strong><span>Confirmed decisions routed through B4 CoPilot Pro under your rules and risk settings.</span></div></div></div></div></div></section>
 <section id="affiliates" aria-labelledby="aff-title"><div class="wrap"><div class="contactband aff-band"><div><div class="kicker">B4 affiliate program</div><h2 id="aff-title">Share B4. Earn 15% recurring.</h2><p>Trading blogger, YouTuber or community leader? Earn 15% of every subscription payment from the traders you refer, for as long as their account stays active. You get credit for any purchase within 90 days of a click, commissions are paid monthly via PayPal, and promotional materials and affiliate support are included.</p></div>
 <a class="btn dark" data-affiliate-signup href="#" hidden>Become an affiliate ↗</a></div></div></section>
+<section id="testimonials" aria-labelledby="testimonials-title" hidden><div class="wrap"><div class="sectionhead"><div class="kicker">From the B4 community</div><h2 id="testimonials-title">What B4 traders say.</h2><p>In their own words, from the B4 community over the years.</p></div><div class="tgrid" id="tgrid-current"></div><div class="thist" id="thist" hidden><h3>From the former B4 Live Trade Room</h3><p>Historical testimonials. The live trade room has been discontinued and is not a current B4 offering.</p><div class="tgrid" id="tgrid-historical"></div></div><p class="tdisc" id="tdisc"></p></div></section>
 <section id="learn"><div class="wrap"><div class="sectionhead"><div class="kicker">Learn &amp; explore</div><h2>Learn the tools. Sharpen your edge.</h2><p>See what each B4 tool does, which platforms it supports, and what's arriving this Black Friday.</p></div><div class="resources"><article class="resource"><div class="kicker">Product guides</div><h3>How B4 tools work</h3><p>Open any product for its full description, then see the tools in action in NinjaTrader 8.</p><a class="textlink" href="#products">Browse products <span>→</span></a></article><article class="resource"><div class="kicker">Platform support</div><h3>Choose the right platform</h3><p>See which tools run on TradingView, NinjaTrader 8, or both.</p><a class="textlink" href="#platforms">View platforms <span>→</span></a></article><article class="resource"><div class="kicker">Coming Black Friday</div><h3>Meet B4 Quantum</h3><p>See how the AI Automated Trade Desk connects the entire B4 ecosystem.</p><a class="textlink" href="#roadmap">See what's next <span>→</span></a></article></div></div></section>
 <section id="founder" aria-labelledby="founder-title"><div class="wrap"><div class="founder-card"><img class="founder-photo" src="assets/brand/founder.jpg" alt="Chuck Edwards, founder of B4 Signals" width="200" height="200" loading="lazy" decoding="async"><div><div class="kicker">Meet the founder</div><h2 id="founder-title">Chuck Edwards</h2><p class="founder-role">Founder, B4 Signals</p><p>B4 Signals builds the indicators, order-flow tools, strategy execution engine and education that B4 members use in NinjaTrader 8 and TradingView.</p></div></div></div></section>
 <section id="contact"><div class="wrap"><div class="contactband"><div><div class="kicker">B4 Signals</div><h2>Find the right tools for your workflow.</h2><p>Explore the B4 lineup and choose the membership that fits your trading.</p></div><div class="actions" style="margin-top:0"><a class="btn dark" href="#products">Explore products ↗</a><a class="btn" href="mailto:info@b4signals.com">Email info@b4signals.com</a></div></div></div></section>
@@ -906,10 +927,10 @@ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('cl
   var KEY='b4proof-off'; try{ if(sessionStorage.getItem(KEY)) return; }catch(e){}
   var ICONS={users:'<path d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="4"/><path d="M22 19v-1a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
     tools:'<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/>',cart:'<circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11l2-8H6"/>',
-    download:'<path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/>',cap:'<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/>',gift:'<rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1zm0 0c2-4 6-4 6-1s-6 1-6 1z"/>'};
+    download:'<path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/>',cap:'<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/>',quote:'<path d="M7 7h4v4c0 3-1.5 5-4 6"/><path d="M14 7h4v4c0 3-1.5 5-4 6"/>',gift:'<rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1zm0 0c2-4 6-4 6-1s-6 1-6 1z"/>'};
   function esc(t){var d=document.createElement('div');d.textContent=t||'';return d.innerHTML}
   function card(it){
-    var el=document.createElement('div'); el.className='b4p'; el.setAttribute('role','status');
+    var el=document.createElement('div'); el.className='b4p'+(it.q?' q':''); el.setAttribute('role','status');
     el.innerHTML='<div class="b4p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+(ICONS[it.icon]||ICONS.users)+'</svg></div>'+
       '<div><b>'+esc(it.title)+'</b><p>'+esc(it.text)+'</p>'+(it.href?'<a class="b4p-cta" href="'+esc(it.href)+'">'+esc(it.cta||'Learn more')+' \u2197</a>':'')+'<small>'+esc(it.note)+'</small></div>'+
       '<button class="b4p-x" aria-label="Hide notifications">\u00d7</button>';
@@ -917,9 +938,15 @@ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('cl
     return el;
   }
   var stop=false;
-  fetch('assets/data/social-proof.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(data){
-    if(!data||!data.items||!data.items.length) return;
-    var items=data.items.slice(), i=0, shown=0, MAX=6;
+  function load(u){return fetch(u,{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+  Promise.all([load('assets/data/social-proof.json'),load('assets/data/testimonials.json')]).then(function(res){
+    var stats=(res[0]&&Array.isArray(res[0].items))?res[0].items.filter(function(x){return x&&x.title&&x.text}):[];
+    var quotes=(res[1]&&Array.isArray(res[1].items))?res[1].items.filter(function(x){return x&&x.group!=='historical'&&typeof x.popup==='string'&&x.popup}).map(function(x){
+      return {icon:'quote',title:'From the B4 community',text:'\u201c'+x.popup+'\u201d',note:'Member testimonial',q:1};}):[];
+    var items=[], a=0, b=0;
+    while(a<stats.length||b<quotes.length){ if(a<stats.length) items.push(stats[a++]); if(b<quotes.length) items.push(quotes[b++]); }
+    if(!items.length) return;
+    var i=Math.floor(Math.random()*items.length), shown=0, MAX=Math.min(6,items.length);
     function next(){
       if(stop||shown>=MAX||document.hidden){ if(!stop&&shown<MAX) setTimeout(next,4000); return; }
       var el=card(items[i%items.length]); i++; shown++;
@@ -927,8 +954,30 @@ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('cl
       setTimeout(function(){ el.classList.remove('show'); setTimeout(function(){ if(el.parentNode) el.remove(); if(!stop) setTimeout(next,9000); },500); },7000);
     }
     setTimeout(next,6000);
-  }).catch(function(){});
+  });
 })();
 /* SOCIAL-PROOF:END */
+</script>
+
+<script>
+/* TESTIMONIALS:START  renders assets/data/testimonials.json */
+(function(){
+  var sec=document.getElementById('testimonials'); if(!sec) return;
+  function esc(t){var d=document.createElement('div');d.textContent=t||'';return d.innerHTML}
+  function card(it){
+    return '<figure class="tcard'+(it.group==='historical'?' historical':'')+'"><blockquote>'+esc(it.quote)+'</blockquote>'+
+      '<figcaption><b>'+esc(it.name)+'</b><span>'+(it.group==='historical'?esc(it.context||'Historical testimonial'):'B4 community member')+'</span></figcaption></figure>';
+  }
+  fetch('assets/data/testimonials.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(d){
+    var items=(d&&Array.isArray(d.items))?d.items.filter(function(x){return x&&typeof x.quote==='string'&&x.quote&&typeof x.name==='string'&&x.name}):[];
+    var cur=items.filter(function(x){return x.group!=='historical'}), his=items.filter(function(x){return x.group==='historical'});
+    if(!cur.length&&!his.length) return;
+    document.getElementById('tgrid-current').innerHTML=cur.map(card).join('');
+    if(his.length){document.getElementById('tgrid-historical').innerHTML=his.map(card).join('');document.getElementById('thist').hidden=false;}
+    document.getElementById('tdisc').textContent=d.disclaimer||'';
+    sec.hidden=false;
+  }).catch(function(){});
+})();
+/* TESTIMONIALS:END */
 </script>
 </body></html>
