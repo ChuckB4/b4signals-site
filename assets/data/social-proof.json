@@ -1,0 +1,12 @@
+{
+  "_about": "B4 social proof feed. Only verified figures from Kajabi admin (read 2026-10-10). No personal data. Update counts from Kajabi; never invent events.",
+  "updated": "2026-10-10",
+  "items": [
+    {"icon": "users", "title": "2,449 traders", "text": "have joined the B4 community.", "note": "Verified · Kajabi contacts"},
+    {"icon": "download", "title": "3,570 requests", "text": "for the free B4 Indicator on NinjaTrader 8 and TradingView.", "note": "Verified · Kajabi form submissions"},
+    {"icon": "tools", "title": "75 members", "text": "have B4 Trading Tools access.", "note": "Verified · Kajabi product access"},
+    {"icon": "cart", "title": "65 memberships", "text": "sold for B4 Trading Tools.", "note": "Verified · Kajabi all-time purchases"},
+    {"icon": "cap", "title": "72 traders", "text": "enrolled in B4 AMP education.", "note": "Verified · Kajabi course enrollments"},
+    {"icon": "gift", "title": "Free B4 AMP Education", "text": "is open. Start learning today.", "note": "New · Free course", "href": "https://members.b4signals.com/offers/GtskLpCe/checkout", "cta": "Start free"}
+  ]
+}
