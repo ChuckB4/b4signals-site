@@ -35,11 +35,20 @@ main p,main li{color:#2c4150}main ul{padding-left:22px}main li{margin:7px 0}main
 .cta h2{font-weight:300;margin:0;font-size:clamp(22px,3vw,30px)}.cta .btn{background:var(--navy);border-color:var(--navy);color:#fff}
 footer{background:#06121d;color:#a6bbc5;padding:32px 0;font-size:13px}footer a{color:#d3e6ea;margin-right:14px}footer p{max-width:900px;line-height:1.7}
 @media(max-width:700px){nav{display:none}.shots{grid-template-columns:1fr}}
+.pd-preview{margin:0 0 8px}.pd-preview h4{margin-top:0}
+.pd-shots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px}.pd-shots figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b1622}
+.pd-shots figure:first-child{grid-column:1/-1}.pd-shots a{display:block;line-height:0}.pd-shots img{display:block;width:100%;max-width:100%;height:auto}
+.pd-shots a:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}.pd-shots figcaption{padding:10px 14px;font-size:13px;line-height:1.45;color:#c3d5dd}
+.pd-shot-note{font-size:13px;color:var(--muted)!important;margin:10px 0 0}
+.pd-tv{display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;border-radius:980px;border:1px solid var(--teal2);color:var(--teal2);font-weight:600;font-size:14px;text-decoration:none}
+.pd-tv:hover{background:var(--mint)}
+@media(max-width:700px){.pd-shots{grid-template-columns:1fr}}
 </style></head><body>
 <header><div class="wrap"><a class="brand" href="../index.html"><span class="mark">B4</span>B4 SIGNALS</a><nav aria-label="Main"><a href="../index.html#products">Products</a><a href="../index.html#black-friday">Memberships</a><a href="../index.html#b4-funding">B4 Funding</a></nav></div></header>
 <section class="hero"><div class="wrap"><div class="kicker">Market scanning</div><h1>B4 Scanner</h1><p class="lead">Monitors multiple instruments and surfaces B4 conditions and potential setups worth a closer look.</p><div class="pills"><span class="pill">NinjaTrader 8</span><span class="pill">Included with membership</span></div>
 <div class="actions"><a class="btn" href="../index.html#black-friday">Choose your membership ↗</a><a class="btn outline" href="../index.html#b4-scanner">See it on the homepage</a></div></div></section>
 <main class="wrap">
+<section class="pd-preview" aria-label="B4 Scanner preview"><h4>Preview</h4><div class="pd-shots"><figure><a href="../assets/viz/scanner.webp" target="_blank" rel="noopener" aria-label="Open full-size image: B4 Scanner window listing futures instruments with arrow, watchlist, trend and indicator columns"><img src="../assets/viz/scanner.webp" width="1600" height="1000" alt="B4 Scanner window listing futures instruments with arrow, watchlist, trend and indicator columns" loading="lazy" decoding="async"></a><figcaption>B4 Scanner scanning a futures list on closed daily bars. Scan only: it never places, changes or cancels orders.</figcaption></figure></div><p class="pd-shot-note">VISUALIZATION · Enhanced visualizations based on NinjaTrader 8 screens from a simulation account (Sim101). Not a live trading result. Select an image to open it full size.</p></section>
 <p class="pd-tagline">Market Scanning. Multi-Instrument Awareness. B4 Trading Intelligence.</p>
 <p>B4 Scanner is a NinjaTrader 8 add-on designed to help traders monitor multiple instruments and identify market conditions that warrant further review within the B4 Signals trading methodology.</p>
 <p>Instead of manually reviewing every instrument and chart, B4 Scanner provides a dedicated scanning interface for surfacing relevant instruments, developing conditions, and potential setups across the supported market universe. It helps traders focus their attention where additional analysis may be useful while keeping final trading decisions grounded in confirmation and risk management.</p>
@@ -50,7 +59,7 @@ footer{background:#06121d;color:#a6bbc5;padding:32px 0;font-size:13px}footer a{c
 <p>Scanner results are informational. A surfaced instrument or condition is not, by itself, a confirmed trade, an entry instruction, or a guarantee of a profitable outcome. Traders should evaluate the underlying chart, applicable B4 confirmation requirements, market context, and risk controls before acting.</p>
 <p class="pd-tagline">B4 Scanner — Scan the market. Surface relevant conditions. Focus your analysis.</p>
 <p class="pd-disclaimer">For educational and research purposes only. Not trading advice. Trading involves substantial risk, and scanning results do not guarantee trading opportunities or outcomes.</p>
-<h4>See it in NinjaTrader 8</h4><div class="shots"><figure><img src="../assets/viz/scanner.webp" alt="B4 Scanner scanning a futures list on closed daily bars" loading="lazy" decoding="async"><figcaption>B4 Scanner scanning a futures list on closed daily bars</figcaption></figure></div><p class="pd-disclaimer">Enhanced visualizations based on NinjaTrader 8 screens from a simulation account (Sim101).</p>
+<p class="pd-disclaimer">Enhanced visualizations based on NinjaTrader 8 screens from a simulation account (Sim101).</p>
 </main>
 <div class="wrap cta"><h2>Ready to put B4 Scanner to work?</h2><a class="btn" href="../index.html#black-friday">See membership options ↗</a></div>
 <footer><div class="wrap"><p>For educational purposes only. Not trading advice. Trading involves substantial risk and is not suitable for every participant. Past performance does not guarantee future results.</p>

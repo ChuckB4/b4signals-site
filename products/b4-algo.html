@@ -35,11 +35,20 @@ main p,main li{color:#2c4150}main ul{padding-left:22px}main li{margin:7px 0}main
 .cta h2{font-weight:300;margin:0;font-size:clamp(22px,3vw,30px)}.cta .btn{background:var(--navy);border-color:var(--navy);color:#fff}
 footer{background:#06121d;color:#a6bbc5;padding:32px 0;font-size:13px}footer a{color:#d3e6ea;margin-right:14px}footer p{max-width:900px;line-height:1.7}
 @media(max-width:700px){nav{display:none}.shots{grid-template-columns:1fr}}
+.pd-preview{margin:0 0 8px}.pd-preview h4{margin-top:0}
+.pd-shots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px}.pd-shots figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b1622}
+.pd-shots figure:first-child{grid-column:1/-1}.pd-shots a{display:block;line-height:0}.pd-shots img{display:block;width:100%;max-width:100%;height:auto}
+.pd-shots a:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}.pd-shots figcaption{padding:10px 14px;font-size:13px;line-height:1.45;color:#c3d5dd}
+.pd-shot-note{font-size:13px;color:var(--muted)!important;margin:10px 0 0}
+.pd-tv{display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;border-radius:980px;border:1px solid var(--teal2);color:var(--teal2);font-weight:600;font-size:14px;text-decoration:none}
+.pd-tv:hover{background:var(--mint)}
+@media(max-width:700px){.pd-shots{grid-template-columns:1fr}}
 </style></head><body>
 <header><div class="wrap"><a class="brand" href="../index.html"><span class="mark">B4</span>B4 SIGNALS</a><nav aria-label="Main"><a href="../index.html#products">Products</a><a href="../index.html#black-friday">Memberships</a><a href="../index.html#b4-funding">B4 Funding</a></nav></div></header>
 <section class="hero"><div class="wrap"><div class="kicker">Core analysis</div><h1>B4 Algo</h1><p class="lead">The core B4 signal engine: trend, Ichimoku and VWAP context, machine-learning signals, HUD and profit-taking triggers.</p><div class="pills"><span class="pill">TradingView</span><span class="pill">NinjaTrader 8</span></div>
 <div class="actions"><a class="btn" href="../index.html#black-friday">Choose your membership ↗</a></div></div></section>
 <main class="wrap">
+<section class="pd-preview" aria-label="B4 Algo on TradingView"><h4>Preview on TradingView</h4><p>B4 Algo runs on TradingView and NinjaTrader 8. See the published B4Signals scripts on TradingView.</p><a class="pd-tv" href="https://www.tradingview.com/u/B4Signals/" target="_blank" rel="noopener">See B4Signals on TradingView ↗</a></section>
 <p class="pd-tagline">The Integrated B4 Trading Analysis and Signal Engine</p>
 <p>B4 Algo is the core indicator and analytical engine of the B4 Signals ecosystem, available for TradingView and NinjaTrader 8. It consolidates B4's proprietary indicator technology, market analysis, trend evaluation, signal generation, and integrated trading-context functionality into a unified analytical framework.</p>
 <p>B4 Algo is designed to do more than display indicator readings. It provides analytical information that can integrate with B4 Tape and compatible B4 tools to help traders interpret market conditions, evaluate trade opportunities, manage trade context, and identify potential profit-taking conditions.</p>
