@@ -232,6 +232,10 @@ p{margin:0}
 .quantum{position:relative;overflow:hidden;border-radius:calc(var(--radius) + 6px);border:1px dashed var(--line-2);padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;background:radial-gradient(70% 90% at 100% 0%,var(--accent-soft),transparent 60%),var(--surface)}
 .quantum .frame{background:#06121a}
 @media (max-width: 860px){.quantum{grid-template-columns:1fr}}
+.qlist{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:var(--muted);font-size:.95rem}
+.qlist li{position:relative;padding-left:24px}
+.qlist li::before{content:"";position:absolute;left:2px;top:.5em;width:12px;height:7px;border-left:2px solid var(--accent-text);border-bottom:2px solid var(--accent-text);transform:rotate(-45deg)}
+.qlist strong{color:var(--text)}
 
 /* Founder */
 .founder{display:flex;gap:18px;align-items:center;padding:22px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);max-width:760px;margin:0 auto;width:100%}
@@ -490,9 +494,9 @@ p{margin:0}
       <article class="card soon reveal" data-cat="execution">
         <div class="card-top"><span class="mono" aria-hidden="true">QX</span><span class="pill muted">Coming soon</span></div>
         <h3>B4 Quantum</h3>
-        <p class="tag">Coming soon. Not for sale yet.</p>
+        <p class="tag">19 AI bots research strategies while you sleep. Coming soon.</p>
         <p class="note">B4 Quantum has no price yet and is not part of the Monthly, Quarterly or Annual memberships on sale today. One-Time members get pre-release access when it is available, and B4 Quantum when it is released.</p>
-        <div class="more"><span>NinjaTrader 8</span><a href="#quantum">Read more<span class="sr-only"> about B4 Quantum</span> →</a></div>
+        <div class="more"><span>NinjaTrader 8</span><a href="products/b4-quantum.html">Full details<span class="sr-only"> about B4 Quantum</span> →</a></div>
       </article>
     </div>
 
@@ -637,9 +641,9 @@ p{margin:0}
     <div class="quantum reveal">
       <div style="display:grid;gap:16px">
         <span class="pill muted" style="justify-self:start">Coming soon · Not for sale yet</span>
-        <h2 id="quantum-title">B4 Quantum is coming soon.</h2>
-        <p class="lead">B4 Quantum is designed to work with the B4 tools you already use. It is not for sale yet and has no price. We will publish what it does when it is released.</p>
-        <p class="fine">One-Time members get pre-release access when it is available, and B4 Quantum when it is released.</p>
+        <h2 id="quantum-title">B4 Quantum: 19 AI bots research strategies while you sleep.</h2>
+        <p class="lead">An AI research lab that writes, tests and checks trading ideas overnight. Only strategies that clear every gate are signed and released to you.</p><ul class="qlist"><li><strong>19 AI bots, one research team:</strong> local AI models propose ideas, critique each other and build them into exact trading rules.</li><li><strong>Five strict validation gates:</strong> training data, unseen data, stable settings, robustness and walk-forward testing, and a final check on sealed market data.</li><li><strong>Automated trading:</strong> B4 Quantum runs each signed strategy for you: entries, exits, stop and target.</li><li><strong>Built-in risk management:</strong> a daily loss limit, a trailing drawdown stop and a cool-down after a losing streak.</li><li><strong>Signed updates:</strong> new strategies arrive as signed, versioned releases; nothing unsigned ever runs.</li></ul><p><a class="btn btn-ghost" href="products/b4-quantum.html">See everything B4 Quantum does</a></p>
+        <p class="fine">Not for sale yet; no price yet. One-Time members get pre-release access when it is available, and B4 Quantum when it is released.</p>
       </div>
       <div class="frame"><img src="assets/b4-quantum-hero.png" width="836" height="428" loading="lazy" decoding="async" alt="B4 Quantum artwork."></div>
     </div>
