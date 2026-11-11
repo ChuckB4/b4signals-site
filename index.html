@@ -281,6 +281,42 @@ p{margin:0}
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
 .js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion: reduce){.js .reveal{opacity:1;transform:none}}
+
+/* Squawk video */
+.sq-player{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-2);background:#06121a;box-shadow:var(--shadow)}
+.sq-player video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#06121a}
+.sq-controls{position:absolute;left:16px;bottom:16px;display:flex;flex-wrap:wrap;gap:10px}
+.sq-controls .btn-ghost{background:color-mix(in srgb,#06121a 70%,transparent);color:#e8f2f3;border-color:rgba(232,242,243,.35)}
+.sq-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.sq-tile{margin:0;border-radius:var(--radius);overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.sq-tile video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#06121a}
+.sq-tile figcaption{padding:14px 16px 16px;display:grid;gap:4px}
+.sq-tile figcaption p{color:var(--muted);font-size:.92rem}
+@media (max-width: 760px){.sq-tiles{grid-template-columns:1fr}.sq-controls{position:static;padding:12px;background:#06121a}}
+/* Testimonials marquee */
+.tmarquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.ttrack{display:flex;width:max-content;animation:tscroll 90s linear infinite}
+.tmarquee:hover .ttrack,.tmarquee:focus-within .ttrack,.ttrack.paused{animation-play-state:paused}
+.tset{display:flex;gap:16px;padding:6px 8px}
+@keyframes tscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tcard{margin:0;width:340px;flex:none;display:flex;flex-direction:column;gap:14px;padding:22px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.tcard blockquote{margin:0}
+.tcard blockquote p{font-size:.96rem;line-height:1.6;color:var(--text)}
+.tcard figcaption{margin-top:auto;display:flex;gap:12px;align-items:center;border-top:1px solid var(--line);padding-top:12px}
+.tcard .tav{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);font-weight:800}
+.tcard cite{display:block;font-style:normal;font-weight:700}
+.tcard .tsub{display:block;font-size:.82rem;color:var(--faint)}
+.tcard.hist{border-style:dashed}
+@media (prefers-reduced-motion: reduce){.ttrack{animation:none;width:auto}.tset{flex-wrap:wrap;justify-content:center}.tset[aria-hidden="true"]{display:none}.tpause{display:none}}
+/* Platforms */
+.plat{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plat-card{display:grid;gap:14px;padding:24px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.plat-card:hover{border-color:var(--accent)}
+.plat-logo{display:grid;place-items:center;min-height:110px;padding:18px;border-radius:var(--radius-sm);background:#ffffff}
+.plat-logo img{max-height:56px;width:auto}
+.plat-text{color:var(--muted)}
+.plat-text strong{color:var(--text)}
+@media (max-width: 640px){.plat{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -300,6 +336,7 @@ p{margin:0}
     <a class="brand" href="#top" aria-label="B4 Signals home"><span class="mark" aria-hidden="true">B4</span><span>B4 SIGNALS<small>TRADING TECHNOLOGY</small></span></a>
     <nav class="nav-links" id="nav-links" aria-label="Main">
       <a href="#products">Products</a>
+      <a href="#hear-it">Hear it</a>
       <a href="#see-it">See it</a>
       <a href="#how-it-fits">How it fits</a>
       <a href="#pricing">Pricing</a>
@@ -362,6 +399,35 @@ p{margin:0}
       <div class="step"><span class="num">03</span><h3>Execute</h3><p>Your rules, carried out by B4 CoPilot Pro.</p></div>
       <div class="step"><span class="num">04</span><h3>Review</h3><p>Every signal recorded, taken or not, with the reason.</p></div>
     </div>
+  </div>
+</section>
+
+
+<!-- SQUAWK -->
+<section class="section sq" id="hear-it" aria-labelledby="hear-title" style="padding-top:clamp(24px,4vw,48px)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Hear the squawk box</span>
+      <h2 id="hear-title">Hear the market. Watch the tools work.</h2>
+      <p class="lead">B4 Order Flow and B4 CoPilot Pro in NinjaTrader&reg; 8, with the squawk box calling what the tape is doing. Turn the sound on to hear it.</p>
+    </div>
+    <div class="sq-player reveal">
+      <video id="sq-video" muted loop playsinline preload="none" poster="assets/media/b4-squawk-loop-poster.jpg" aria-label="B4 Order Flow tape, DOM and footprint chart with B4 CoPilot Pro, with spoken squawk-box calls shown as captions">
+        <source src="assets/media/b4-squawk-loop.mp4" type="video/mp4">
+      </video>
+      <div class="sq-controls">
+        <button class="btn btn-primary" type="button" id="sq-sound" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          <span>Turn on the squawk box</span></button>
+        <button class="btn btn-ghost sq-pause" type="button" id="sq-pause" aria-pressed="false">Pause</button>
+      </div>
+    </div>
+    <div class="sq-tiles">
+      <figure class="sq-tile reveal"><video class="sq-clip" muted loop playsinline preload="none" poster="assets/media/b4-close-tape.jpg" aria-label="Close-up of the B4 Order Flow tape printing trades"><source src="assets/media/b4-close-tape.mp4" type="video/mp4"></video><figcaption><h3>The Tape</h3><p>Every print, sized and colored as it happens.</p></figcaption></figure>
+      <figure class="sq-tile reveal"><video class="sq-clip" muted loop playsinline preload="none" poster="assets/media/b4-close-footprint.jpg" aria-label="Close-up of a B4 footprint chart with bid and ask volume building"><source src="assets/media/b4-close-footprint.mp4" type="video/mp4"></video><figcaption><h3>Footprint</h3><p>Bid and ask volume building at every price.</p></figcaption></figure>
+      <figure class="sq-tile reveal"><video class="sq-clip" muted loop playsinline preload="none" poster="assets/media/b4-close-copilot.jpg" aria-label="Close-up of B4 CoPilot Pro managing working orders on the chart"><source src="assets/media/b4-close-copilot.mp4" type="video/mp4"></video><figcaption><h3>B4 CoPilot Pro</h3><p>Your rules, carried out on the chart.</p></figcaption></figure>
+    </div>
+    <p class="fine" style="margin-top:14px">Visualization made with NinjaTrader&reg; 8. Not a live trading result.</p>
   </div>
 </section>
 
@@ -650,6 +716,44 @@ p{margin:0}
   </div>
 </section>
 
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials" aria-labelledby="testimonials-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">From the B4 community</span>
+      <h2 id="testimonials-title">What B4 traders say.</h2>
+      <p class="lead">In their own words, from the B4 community over the years.</p>
+    </div>
+  </div>
+  <div class="tmarquee" id="tmarquee">
+    <div class="ttrack">
+      <div class="tset"><figure class="tcard"><blockquote><p>“This system really has changed my life.” … “I use all the B4 tools. A little over a year trading with B4 now.” … “If you master this system, it will change the way you see the market, and make you a better all around trader.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">T</span><span><cite>Truthseeker222</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“Using this system and following its rules, …has absolutely revolutionized my trading. It kept me out of the market all day today until there was a clear setup, then guided me right through it… the B4 system and strategy,… on its own has been game-changing for me. If you&#x27;re lurking and considering jumping into VIP, trust me: DO IT.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">D</span><span><cite>derekwebb</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“Have been a part of the B4 One-Time Membership since 2021. B4 Levels, Brackets, Ichimoku, Squeeze, Copilot, Copilot-Pro, B4 bars have been integral part of my Trading system. Plus mentorship from @barbaros and @Chuck have been a great help… Above that, B4 Community is a Family where we share and help each other grow! Thanks”</p></blockquote><figcaption><span class="tav" aria-hidden="true">G</span><span><cite>Gurukrupa</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“I started using CoPilot on November 12th… Thank you so much @barbaros and @Chuck!!! Because of you guys and the B4 Trading Community, I finally feel like I can accomplish my dream of becoming a full time trader…”</p></blockquote><figcaption><span class="tav" aria-hidden="true">A</span><span><cite>AJD</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“With the help of the B4 indicator, I am in control of my entries and exits and know what is going on, taking the guess work out of trading makes a massive difference.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">C</span><span><cite>Community Member</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“All I can say is wow! Day Trading is so hard due to the abundance of information out there, but the B4 indicator takes much of it and helps you hone a strategy that fits you.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">C</span><span><cite>Community Member</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“Since finding the B4 Indicator and Scanner and being part of a larger family / community of people, this past week was my best week ever. I exited my trades I got into last week and my account grew…”</p></blockquote><figcaption><span class="tav" aria-hidden="true">C</span><span><cite>Community Member</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard hist"><blockquote><p>“Just want to say thank you for the live trading sessions. Watching you work (even when you are sitting out on a Friday) gives me the patience and confidence to trust the system. It&#x27;s Friday and a little choppy, so I played a couple quick scalps on the Short Breakout and Go Short…”</p></blockquote><figcaption><span class="tav" aria-hidden="true">S</span><span><cite>shootsiescores</cite><span class="tsub">Former B4 Live Trade Room (discontinued)</span></span></figcaption></figure><figure class="tcard hist"><blockquote><p>“B4signals.com… Chuck and Barb are amazing at what they do...both Invent and live teach both semi and fully automated strategies… I highly recommend this service!”</p></blockquote><figcaption><span class="tav" aria-hidden="true">B</span><span><cite>Bluedevil</cite><span class="tsub">Former B4 Live Trade Room (discontinued)</span></span></figcaption></figure></div>
+      <div class="tset" aria-hidden="true"><figure class="tcard"><blockquote><p>“This system really has changed my life.” … “I use all the B4 tools. A little over a year trading with B4 now.” … “If you master this system, it will change the way you see the market, and make you a better all around trader.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">T</span><span><cite>Truthseeker222</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“Using this system and following its rules, …has absolutely revolutionized my trading. It kept me out of the market all day today until there was a clear setup, then guided me right through it… the B4 system and strategy,… on its own has been game-changing for me. If you&#x27;re lurking and considering jumping into VIP, trust me: DO IT.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">D</span><span><cite>derekwebb</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“Have been a part of the B4 One-Time Membership since 2021. B4 Levels, Brackets, Ichimoku, Squeeze, Copilot, Copilot-Pro, B4 bars have been integral part of my Trading system. Plus mentorship from @barbaros and @Chuck have been a great help… Above that, B4 Community is a Family where we share and help each other grow! Thanks”</p></blockquote><figcaption><span class="tav" aria-hidden="true">G</span><span><cite>Gurukrupa</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“I started using CoPilot on November 12th… Thank you so much @barbaros and @Chuck!!! Because of you guys and the B4 Trading Community, I finally feel like I can accomplish my dream of becoming a full time trader…”</p></blockquote><figcaption><span class="tav" aria-hidden="true">A</span><span><cite>AJD</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“With the help of the B4 indicator, I am in control of my entries and exits and know what is going on, taking the guess work out of trading makes a massive difference.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">C</span><span><cite>Community Member</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“All I can say is wow! Day Trading is so hard due to the abundance of information out there, but the B4 indicator takes much of it and helps you hone a strategy that fits you.”</p></blockquote><figcaption><span class="tav" aria-hidden="true">C</span><span><cite>Community Member</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard"><blockquote><p>“Since finding the B4 Indicator and Scanner and being part of a larger family / community of people, this past week was my best week ever. I exited my trades I got into last week and my account grew…”</p></blockquote><figcaption><span class="tav" aria-hidden="true">C</span><span><cite>Community Member</cite><span class="tsub">B4 community member</span></span></figcaption></figure><figure class="tcard hist"><blockquote><p>“Just want to say thank you for the live trading sessions. Watching you work (even when you are sitting out on a Friday) gives me the patience and confidence to trust the system. It&#x27;s Friday and a little choppy, so I played a couple quick scalps on the Short Breakout and Go Short…”</p></blockquote><figcaption><span class="tav" aria-hidden="true">S</span><span><cite>shootsiescores</cite><span class="tsub">Former B4 Live Trade Room (discontinued)</span></span></figcaption></figure><figure class="tcard hist"><blockquote><p>“B4signals.com… Chuck and Barb are amazing at what they do...both Invent and live teach both semi and fully automated strategies… I highly recommend this service!”</p></blockquote><figcaption><span class="tav" aria-hidden="true">B</span><span><cite>Bluedevil</cite><span class="tsub">Former B4 Live Trade Room (discontinued)</span></span></figcaption></figure></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <p style="margin-top:14px"><button class="btn btn-ghost tpause" type="button" id="tpause" aria-pressed="false">Pause testimonials</button></p>
+    <p class="fine">Testimonials reflect individual experiences and do not guarantee future trading results. They come from real B4 community members, are not typical results, and are for educational purposes only. Not trading advice. The B4 Live Trade Room has been discontinued and is not a current B4 offering.</p>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="section" id="platforms" aria-labelledby="platforms-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Platform and data</span>
+      <h2 id="platforms-title">Built for NinjaTrader&reg; 8.</h2>
+      <p class="lead">NinjaTrader&reg; is our featured platform, and every B4 tool is built for NinjaTrader&reg; 8. We recommend NinjaTrader Brokerage as the preferred brokerage, and Kinetick&reg; for market data.</p>
+    </div>
+    <div class="plat">
+      <a class="plat-card" href="https://ninjatrader.com/" target="_blank" rel="noopener"><span class="plat-logo"><img src="assets/images/NinjaTrader_Logo.png" width="528" height="76" alt="NinjaTrader" loading="lazy" decoding="async"></span><span class="plat-text"><strong>NinjaTrader&reg;</strong> Trading platform and brokerage. <span class="sr-only">(opens in a new tab)</span></span></a>
+      <a class="plat-card" href="https://kinetick.com/" target="_blank" rel="noopener"><span class="plat-logo"><img src="assets/images/Kinetick_Logo.png" width="400" height="100" alt="Kinetick" loading="lazy" decoding="async"></span><span class="plat-text"><strong>Kinetick&reg;</strong> Market data for NinjaTrader&reg;. <span class="sr-only">(opens in a new tab)</span></span></a>
+    </div>
+    <p class="fine" style="margin-top:14px">NinjaTrader&reg; and Kinetick&reg; are registered trademarks of their owners. No NinjaTrader company endorses, recommends or approves B4 products.</p>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq" aria-labelledby="faq-title" style="padding-top:0">
   <div class="wrap">
@@ -770,6 +874,32 @@ p{margin:0}
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(el){io.observe(el);});}
   else{els.forEach(function(el){el.classList.add('in');});}
   var y=d.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+})();
+</script>
+
+<script>
+(function(){
+  var d=document, reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var main=d.getElementById('sq-video'), clips=[].slice.call(d.querySelectorAll('.sq-clip'));
+  var sound=d.getElementById('sq-sound'), pause=d.getElementById('sq-pause'), userPaused=reduce;
+  var all=[main].concat(clips);
+  function playVisible(v){ if(!userPaused){ var p=v.play(); if(p&&p.catch) p.catch(function(){}); } }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ playVisible(e.target);} else { e.target.pause(); } });},{threshold:.25});
+    all.forEach(function(v){io.observe(v);});
+  }
+  function setPaused(p){ userPaused=p; pause.setAttribute('aria-pressed',p?'true':'false'); pause.textContent=p?'Play':'Pause';
+    all.forEach(function(v){ if(p){v.pause();} }); if(!p){ playVisible(main); } }
+  if(reduce){ pause.textContent='Play'; pause.setAttribute('aria-pressed','true'); }
+  pause.addEventListener('click',function(){ setPaused(!userPaused); });
+  sound.addEventListener('click',function(){
+    var on=main.muted; main.muted=!on;
+    sound.setAttribute('aria-pressed',on?'true':'false');
+    sound.querySelector('span').textContent=on?'Turn off the squawk box':'Turn on the squawk box';
+    if(on){ userPaused=false; pause.setAttribute('aria-pressed','false'); pause.textContent='Pause'; var p=main.play(); if(p&&p.catch) p.catch(function(){}); }
+  });
+  var tp=d.getElementById('tpause'), track=d.querySelector('.ttrack');
+  if(tp&&track){ tp.addEventListener('click',function(){ var p=track.classList.toggle('paused'); tp.setAttribute('aria-pressed',p?'true':'false'); tp.textContent=p?'Play testimonials':'Pause testimonials'; }); }
 })();
 </script>
 </body>
