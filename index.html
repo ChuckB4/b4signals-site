@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap">
-<link rel="preload" as="image" href="assets/b4-hero-v4.png" fetchpriority="high">
+<link rel="preload" as="image" href="assets/tour/chart.webp" fetchpriority="high">
 <script>
 /* Theme: saved choice wins, else the system setting. Storage can be blocked; the page works without it. */
 (function(){try{var t=localStorage.getItem('b4-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
@@ -317,6 +317,50 @@ p{margin:0}
 .plat-text{color:var(--muted)}
 .plat-text strong{color:var(--text)}
 @media (max-width: 640px){.plat{grid-template-columns:1fr}}
+/* Hero: real screens */
+.hero-shot{position:relative}
+.hero-inset{position:absolute;right:-14px;bottom:-22px;width:42%;border-radius:12px;overflow:hidden;border:1px solid var(--line-2);box-shadow:var(--shadow);background:#081720}
+.hero-inset img{width:100%}
+.hero-inset span{position:absolute;left:8px;top:8px;padding:3px 8px;border-radius:999px;background:rgba(6,18,26,.85);color:#e8f2f3;font:700 .7rem/1.3 var(--body);letter-spacing:.06em;text-transform:uppercase}
+.peek{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+.peek a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid var(--line-2);color:var(--text);text-decoration:none;font-weight:600;font-size:.9rem;background:var(--surface)}
+.peek a:hover{border-color:var(--accent)}
+.peek .peek-l{color:var(--muted);font-size:.9rem;align-self:center;margin-right:4px}
+@media (max-width: 920px){.hero-inset{right:8px;bottom:8px;width:38%}.peek{margin-top:14px}}
+/* Tour */
+.tour-tabs{display:flex;gap:6px;overflow-x:auto;padding:4px;border-radius:999px;background:var(--surface);border:1px solid var(--line);width:max-content;max-width:100%;scrollbar-width:thin}
+.tour-tab{flex:none;min-height:44px;padding:10px 18px;border-radius:999px;border:0;background:transparent;color:var(--muted);font:700 .95rem/1 var(--body);cursor:pointer;white-space:nowrap}
+.tour-tab:hover{color:var(--text)}
+.tour-tab[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.tour-panel{margin-top:22px;border-radius:var(--radius)}
+.tour-panel[hidden]{display:none}
+.tour-intro{display:grid;gap:6px;margin-bottom:16px;max-width:70ch}
+.tour-intro p{color:var(--muted)}
+.tour-view{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:18px;align-items:start}
+.tour-view + .tour-view{margin-top:28px}
+.tour-shot{margin:0}
+.tour-vtitle{font:700 1rem/1.3 var(--display);margin-bottom:8px}
+.tour-img{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-2);background:#081720;box-shadow:var(--shadow)}
+.tour-img img{width:100%}
+.spot{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#36d9b8;color:#03201a;font:800 .85rem/1 var(--body);border:2px solid #03201a;box-shadow:0 0 0 3px rgba(54,217,184,.35),0 4px 12px rgba(0,0,0,.5);cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
+.spot:hover{transform:translate(-50%,-50%) scale(1.12)}
+.spot.on{background:#f2c46b;box-shadow:0 0 0 6px rgba(242,196,107,.45),0 4px 12px rgba(0,0,0,.5);animation:spotpulse 1.6s ease-out infinite;z-index:2}
+@keyframes spotpulse{0%{box-shadow:0 0 0 0 rgba(242,196,107,.7),0 4px 12px rgba(0,0,0,.5)}100%{box-shadow:0 0 0 14px rgba(242,196,107,0),0 4px 12px rgba(0,0,0,.5)}}
+.tour-side{display:grid;gap:12px}
+.tour-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.tour-list li{border-radius:var(--radius-sm);border:1px solid var(--line);background:var(--surface)}
+.tour-item{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:8px 12px;border:0;background:transparent;color:var(--text);font:700 .96rem/1.3 var(--body);text-align:left;cursor:pointer;border-radius:var(--radius-sm)}
+.tour-item .tn{display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);font-size:.8rem;border:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+.tour-list .td{padding:0 12px 10px 48px;color:var(--muted);font-size:.9rem;margin-top:-4px}
+.tour-list li.on{border-color:var(--warn);background:linear-gradient(90deg,var(--warn-soft),transparent 70%),var(--surface)}
+.tour-list li.on .tn{background:#f2c46b;color:#03201a;border-color:#f2c46b}
+.tour-clip{margin:0;border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.tour-clip video{display:block;width:100%;aspect-ratio:16/9;background:#06121a}
+.tour-clip figcaption{padding:8px 12px;font-size:.88rem;color:var(--muted)}
+.tour-more{font-weight:700;padding:8px 0}
+@media (max-width: 900px){.tour-view{grid-template-columns:1fr}}
+@media (max-width: 560px){.spot{width:26px;height:26px;font-size:.75rem}.tour-list .td{padding-left:12px;margin-top:0}}
+@media (prefers-reduced-motion: reduce){.spot.on{animation:none}}
 </style>
 </head>
 <body>
@@ -336,6 +380,7 @@ p{margin:0}
     <a class="brand" href="#top" aria-label="B4 Signals home"><span class="mark" aria-hidden="true">B4</span><span>B4 SIGNALS<small>TRADING TECHNOLOGY</small></span></a>
     <nav class="nav-links" id="nav-links" aria-label="Main">
       <a href="#products">Products</a>
+      <a href="#explore">Tour</a>
       <a href="#hear-it">Hear it</a>
       <a href="#see-it">See it</a>
       <a href="#how-it-fits">How it fits</a>
@@ -368,7 +413,7 @@ p{margin:0}
       <div class="hero-cta">
         <a class="btn btn-primary" href="#pricing">See memberships
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="#products">Explore the ten tools</a>
+        <a class="btn btn-ghost" href="#explore">Take the tools tour</a>
       </div>
       <div class="hero-meta">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/></svg>Built for NinjaTrader 8</span>
@@ -378,14 +423,17 @@ p{margin:0}
       <p class="fine">No indicator can guarantee a trading outcome. For educational purposes only.</p>
     </div>
     <figure class="hero-art">
-      <div class="frame">
-        <img src="assets/b4-hero-v4.png" width="1600" height="900" alt="Illustration of B4 tools in NinjaTrader 8: a price chart with a trend band and volume profile, a heat map, an order book and small chart panels." fetchpriority="high" decoding="async">
+      <div class="frame hero-shot">
+        <img src="assets/tour/chart.webp" width="1200" height="845" alt="A real NinjaTrader&reg; 8 chart with B4 tools: footprint bars with delta, key levels, a BUY marker, a volume profile, a delta table and a momentum panel." fetchpriority="high" decoding="async">
+        <div class="hero-inset"><img src="assets/tour/hero-dom.webp" width="640" height="385" alt="B4 Order Flow DOM close-up with bid and ask size and recent volume at each price." decoding="async"><span>B4 DOM</span></div>
       </div>
       <div class="chips">
         <div class="float-chip chip-b" aria-hidden="true"><span class="dot"></span><span><b>10 tools</b>One membership</span></div>
-        <div class="float-chip chip-a" aria-hidden="true"><span class="dot"></span><span><b>Analyze · Read · Execute</b>One workflow</span></div>
       </div>
-      <figcaption class="fine">Illustration only. Not a live chart and not a trading result.</figcaption>
+      <div class="peek" aria-label="Jump to the tools tour"><span class="peek-l">See it up close:</span>
+        <a href="#explore" data-tour="chart">Chart</a><a href="#explore" data-tour="dom">DOM</a><a href="#explore" data-tour="tape">Tape</a><a href="#explore" data-tour="scanner">Scanner</a><a href="#explore" data-tour="indicators">Indicators</a>
+      </div>
+      <figcaption class="fine">Real NinjaTrader&reg; 8 screens with B4 tools. Not a live trading result.</figcaption>
     </figure>
   </div>
 </section>
@@ -402,6 +450,181 @@ p{margin:0}
   </div>
 </section>
 
+<!-- TOUR -->
+<section class="section" id="explore" aria-labelledby="explore-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Explore the tools</span>
+      <h2 id="explore-title">Take the tour before you buy.</h2>
+      <p class="lead">Real NinjaTrader&reg; 8 screens with B4 tools. Pick a tool, then select a number to see what each part does.</p>
+    </div>
+    <div class="tour">
+      <div class="tour-tabs" role="tablist" aria-label="B4 tools">
+        <button class="tour-tab" type="button" role="tab" id="tt-chart" aria-controls="tp-chart" aria-selected="true" tabindex="0">Chart</button>
+        <button class="tour-tab" type="button" role="tab" id="tt-dom" aria-controls="tp-dom" aria-selected="false" tabindex="-1">DOM</button>
+        <button class="tour-tab" type="button" role="tab" id="tt-tape" aria-controls="tp-tape" aria-selected="false" tabindex="-1">Order Flow / Tape</button>
+        <button class="tour-tab" type="button" role="tab" id="tt-scanner" aria-controls="tp-scanner" aria-selected="false" tabindex="-1">Scanner</button>
+        <button class="tour-tab" type="button" role="tab" id="tt-indicators" aria-controls="tp-indicators" aria-selected="false" tabindex="-1">Indicators</button>
+      </div>
+      <div class="tour-panel" role="tabpanel" id="tp-chart" aria-labelledby="tt-chart" tabindex="0">
+        <div class="tour-intro"><h3>A B4 chart in NinjaTrader&reg; 8</h3><p>Footprint bars, a volume profile and a momentum panel on one chart. Select a number to see what each part does.</p></div>
+        <div class="tour-view" data-view="chart0">
+          <figure class="tour-shot">
+            <div class="tour-img"><img src="assets/tour/chart.webp" width="1200" height="845" loading="lazy" decoding="async" alt="NinjaTrader&reg; 8 chart with B4 footprint bars, key levels, a BUY marker, a delta table, a volume profile and a momentum panel.">
+              <span class="spot" aria-hidden="true" data-n="1" style="--x:23%;--y:36%">1</span>
+              <span class="spot" aria-hidden="true" data-n="2" style="--x:88%;--y:40%">2</span>
+              <span class="spot" aria-hidden="true" data-n="3" style="--x:66%;--y:11%">3</span>
+              <span class="spot" aria-hidden="true" data-n="4" style="--x:40%;--y:50%">4</span>
+              <span class="spot" aria-hidden="true" data-n="5" style="--x:6%;--y:60%">5</span>
+              <span class="spot" aria-hidden="true" data-n="6" style="--x:45%;--y:84%">6</span>
+            </div>
+          </figure>
+          <div class="tour-side">
+            <ol class="tour-list" aria-label="Parts of A B4 chart in NinjaTrader® 8">
+              <li><button class="tour-item" type="button" data-n="1" aria-pressed="true"><span class="tn" aria-hidden="true">1</span><span class="tt">Footprint bars</span></button><p class="td">Each bar is split into sell and buy volume at every price, with the bar's delta (&Delta;) and total (&Sigma;) printed beside it.</p></li>
+              <li><button class="tour-item" type="button" data-n="2" aria-pressed="false"><span class="tn" aria-hidden="true">2</span><span class="tt">Volume profile</span></button><p class="td">How much traded at each price this session. The widest rows are where most of the business was done.</p></li>
+              <li><button class="tour-item" type="button" data-n="3" aria-pressed="false"><span class="tn" aria-hidden="true">3</span><span class="tt">Key levels</span></button><p class="td">Important prices drawn across the chart, such as the prior day's close (PDC) and the overnight low (ONL).</p></li>
+              <li><button class="tour-item" type="button" data-n="4" aria-pressed="false"><span class="tn" aria-hidden="true">4</span><span class="tt">Signal marker</span></button><p class="td">A marker on the bar where a setup triggered, so you can see it the moment it happens.</p></li>
+              <li><button class="tour-item" type="button" data-n="5" aria-pressed="false"><span class="tn" aria-hidden="true">5</span><span class="tt">Delta table</span></button><p class="td">Delta, session delta and volume for every bar, colored so a shift in pressure stands out.</p></li>
+              <li><button class="tour-item" type="button" data-n="6" aria-pressed="false"><span class="tn" aria-hidden="true">6</span><span class="tt">Momentum panel</span></button><p class="td">B4 Indicator Pro in the lower panel: momentum with overbought, oversold and turbulence zones.</p></li>
+            </ol>
+            <figure class="tour-clip"><video controls muted loop playsinline preload="none" poster="assets/media/b4-close-footprint.jpg" aria-label="Close-up of a B4 footprint chart with bid and ask volume building"><source src="assets/media/b4-close-footprint.mp4" type="video/mp4"></video><figcaption>Watch footprint volume build, bar by bar</figcaption></figure>
+            <a class="tour-more" href="products/b4-auction-pro.html">See B4 Auction Pro<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-panel" role="tabpanel" id="tp-dom" aria-labelledby="tt-dom" tabindex="0" hidden>
+        <div class="tour-intro"><h3>B4 Order Flow DOM</h3><p>Level II depth and liquidity next to your trade controls. Select a number to see what each part does.</p></div>
+        <div class="tour-view" data-view="dom0">
+          <figure class="tour-shot">
+            <div class="tour-img"><img src="assets/tour/dom.webp" width="1264" height="1114" loading="lazy" decoding="async" alt="B4 Order Flow DOM in NinjaTrader&reg; 8: price ladder with bid and ask size, pull and stack, 5-minute volume and B4 levels, beside position, stop, exit and lock-profit controls.">
+              <span class="spot" aria-hidden="true" data-n="1" style="--x:14%;--y:80%">1</span>
+              <span class="spot" aria-hidden="true" data-n="2" style="--x:4%;--y:62%">2</span>
+              <span class="spot" aria-hidden="true" data-n="3" style="--x:38%;--y:62%">3</span>
+              <span class="spot" aria-hidden="true" data-n="4" style="--x:56%;--y:15%">4</span>
+              <span class="spot" aria-hidden="true" data-n="5" style="--x:78%;--y:13%">5</span>
+              <span class="spot" aria-hidden="true" data-n="6" style="--x:95%;--y:14%">6</span>
+              <span class="spot" aria-hidden="true" data-n="7" style="--x:80%;--y:49%">7</span>
+              <span class="spot" aria-hidden="true" data-n="8" style="--x:95%;--y:55%">8</span>
+            </div>
+          </figure>
+          <div class="tour-side">
+            <ol class="tour-list" aria-label="Parts of B4 Order Flow DOM">
+              <li><button class="tour-item" type="button" data-n="1" aria-pressed="true"><span class="tn" aria-hidden="true">1</span><span class="tt">Bid and ask depth</span></button><p class="td">Level II size waiting at each price, buyers on the left and sellers on the right.</p></li>
+              <li><button class="tour-item" type="button" data-n="2" aria-pressed="false"><span class="tn" aria-hidden="true">2</span><span class="tt">Pull and stack</span></button><p class="td">Where size was added (stacked) or pulled in the last 10 seconds, so you can spot liquidity that vanishes.</p></li>
+              <li><button class="tour-item" type="button" data-n="3" aria-pressed="false"><span class="tn" aria-hidden="true">3</span><span class="tt">Recent volume</span></button><p class="td">Volume traded at each price over the last 5 minutes.</p></li>
+              <li><button class="tour-item" type="button" data-n="4" aria-pressed="false"><span class="tn" aria-hidden="true">4</span><span class="tt">B4 levels on the ladder</span></button><p class="td">Volume profile POC and value area, swing lows and TPO levels, marked right on the price.</p></li>
+              <li><button class="tour-item" type="button" data-n="5" aria-pressed="false"><span class="tn" aria-hidden="true">5</span><span class="tt">Your position</span></button><p class="td">Entry, stop, target, 1R and risk for your position, in one box.</p></li>
+              <li><button class="tour-item" type="button" data-n="6" aria-pressed="false"><span class="tn" aria-hidden="true">6</span><span class="tt">Move stop</span></button><p class="td">Break-even and bump buttons. The stop only moves tighter; it never adds risk.</p></li>
+              <li><button class="tour-item" type="button" data-n="7" aria-pressed="false"><span class="tn" aria-hidden="true">7</span><span class="tt">Exit</span></button><p class="td">Cancel working orders or Flatten All for your own manual positions.</p></li>
+              <li><button class="tour-item" type="button" data-n="8" aria-pressed="false"><span class="tn" aria-hidden="true">8</span><span class="tt">Lock profit</span></button><p class="td">Lock in ticks, or move the stop to a multiple of your original risk (R).</p></li>
+            </ol>
+            <a class="tour-more" href="products/b4-order-flow.html">See B4 Order Flow<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-panel" role="tabpanel" id="tp-tape" aria-labelledby="tt-tape" tabindex="0" hidden>
+        <div class="tour-intro"><h3>B4 Order Flow tape</h3><p>Time and sales with a running read of what the tape is doing, and lessons that explain it. Select a number to see what each part does.</p></div>
+        <div class="tour-view" data-view="tape0">
+          <figure class="tour-shot">
+            <div class="tour-img"><img src="assets/tour/tape.webp" width="1600" height="970" loading="lazy" decoding="async" alt="B4 Order Flow tape in NinjaTrader&reg; 8 with a situation line, big trades, levels, volume at price, a B4 Trade Decision box, teaching lessons and an event timeline.">
+              <span class="spot" aria-hidden="true" data-n="1" style="--x:66%;--y:18%">1</span>
+              <span class="spot" aria-hidden="true" data-n="2" style="--x:6%;--y:40%">2</span>
+              <span class="spot" aria-hidden="true" data-n="3" style="--x:15%;--y:46%">3</span>
+              <span class="spot" aria-hidden="true" data-n="4" style="--x:36%;--y:58%">4</span>
+              <span class="spot" aria-hidden="true" data-n="5" style="--x:66%;--y:34%">5</span>
+              <span class="spot" aria-hidden="true" data-n="6" style="--x:92%;--y:32%">6</span>
+              <span class="spot" aria-hidden="true" data-n="7" style="--x:45%;--y:92%">7</span>
+            </div>
+          </figure>
+          <div class="tour-side">
+            <ol class="tour-list" aria-label="Parts of B4 Order Flow tape">
+              <li><button class="tour-item" type="button" data-n="1" aria-pressed="true"><span class="tn" aria-hidden="true">1</span><span class="tt">The situation line</span></button><p class="td">One line on what the tape is doing now, the price that triggers the idea and the price where it is wrong.</p></li>
+              <li><button class="tour-item" type="button" data-n="2" aria-pressed="false"><span class="tn" aria-hidden="true">2</span><span class="tt">Big trades</span></button><p class="td">Large prints, sized and colored by side, so the big players stand out.</p></li>
+              <li><button class="tour-item" type="button" data-n="3" aria-pressed="false"><span class="tn" aria-hidden="true">3</span><span class="tt">Levels</span></button><p class="td">Point of control and value area high and low, beside the prints.</p></li>
+              <li><button class="tour-item" type="button" data-n="4" aria-pressed="false"><span class="tn" aria-hidden="true">4</span><span class="tt">Volume at price</span></button><p class="td">Buy and sell volume at each price over the last 5 minutes.</p></li>
+              <li><button class="tour-item" type="button" data-n="5" aria-pressed="false"><span class="tn" aria-hidden="true">5</span><span class="tt">B4 Trade Decision</span></button><p class="td">Direction, entry, invalidation and how many confirmations agree, in plain words.</p></li>
+              <li><button class="tour-item" type="button" data-n="6" aria-pressed="false"><span class="tn" aria-hidden="true">6</span><span class="tt">Teaching</span></button><p class="td">Built-in lessons that explain what the tape is showing, from who hit whom to tape speed.</p></li>
+              <li><button class="tour-item" type="button" data-n="7" aria-pressed="false"><span class="tn" aria-hidden="true">7</span><span class="tt">Event timeline</span></button><p class="td">Aggressive, passive, turn and state events over the last two minutes.</p></li>
+            </ol>
+            <figure class="tour-clip"><video controls muted loop playsinline preload="none" poster="assets/media/b4-close-tape.jpg" aria-label="Close-up of the B4 Order Flow tape printing trades"><source src="assets/media/b4-close-tape.mp4" type="video/mp4"></video><figcaption>Watch the tape print</figcaption></figure>
+            <a class="tour-more" href="products/b4-order-flow.html">See B4 Order Flow<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-panel" role="tabpanel" id="tp-scanner" aria-labelledby="tt-scanner" tabindex="0" hidden>
+        <div class="tour-intro"><h3>B4 Order Flow scanner</h3><p>Scan a list of markets on closed bars and see where B4 conditions line up. Select a number to see what each part does.</p></div>
+        <div class="tour-view" data-view="scanner0">
+          <figure class="tour-shot">
+            <div class="tour-img"><img src="assets/tour/scanner.webp" width="1600" height="820" loading="lazy" decoding="async" alt="B4 Order Flow scanner in NinjaTrader&reg; 8 listing 14 futures with arrow, watchlist, bars since, trend and indicator columns.">
+              <span class="spot" aria-hidden="true" data-n="1" style="--x:82%;--y:26%">1</span>
+              <span class="spot" aria-hidden="true" data-n="2" style="--x:55%;--y:17%">2</span>
+              <span class="spot" aria-hidden="true" data-n="3" style="--x:25%;--y:69%">3</span>
+              <span class="spot" aria-hidden="true" data-n="4" style="--x:49%;--y:58%">4</span>
+              <span class="spot" aria-hidden="true" data-n="5" style="--x:62%;--y:52%">5</span>
+            </div>
+          </figure>
+          <div class="tour-side">
+            <ol class="tour-list" aria-label="Parts of B4 Order Flow scanner">
+              <li><button class="tour-item" type="button" data-n="1" aria-pressed="true"><span class="tn" aria-hidden="true">1</span><span class="tt">Scan settings</span></button><p class="td">Pick a market list, the bar type and how many bars to load. Scan once, or live on every bar close.</p></li>
+              <li><button class="tour-item" type="button" data-n="2" aria-pressed="false"><span class="tn" aria-hidden="true">2</span><span class="tt">Scan only</span></button><p class="td">This window never places, changes or cancels orders. It only looks.</p></li>
+              <li><button class="tour-item" type="button" data-n="3" aria-pressed="false"><span class="tn" aria-hidden="true">3</span><span class="tt">Signal and watchlist</span></button><p class="td">A new arrow shows on the bar it fires, and each market is marked Long, Short, Sell or Neutral.</p></li>
+              <li><button class="tour-item" type="button" data-n="4" aria-pressed="false"><span class="tn" aria-hidden="true">4</span><span class="tt">Bars since and trend</span></button><p class="td">How many bars since the last signal, and the trend score for each market.</p></li>
+              <li><button class="tour-item" type="button" data-n="5" aria-pressed="false"><span class="tn" aria-hidden="true">5</span><span class="tt">Indicator reads</span></button><p class="td">Quick +1 / -1 reads from the B4 indicator columns, at a glance.</p></li>
+            </ol>
+            <a class="tour-more" href="products/b4-order-flow.html">See B4 Order Flow<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="tour-panel" role="tabpanel" id="tp-indicators" aria-labelledby="tt-indicators" tabindex="0" hidden>
+        <div class="tour-intro"><h3>B4 Indicator Pro and B4 Ichimoku</h3><p>Two B4 indicators on NinjaTrader&reg; 8 charts. Select a number to see what each part does.</p></div>
+        <div class="tour-view" data-view="indicators0">
+          <figure class="tour-shot">
+            <figcaption class="tour-vtitle">B4 Indicator Pro</figcaption>
+            <div class="tour-img"><img src="assets/tour/indicator-pro.webp" width="1424" height="603" loading="lazy" decoding="async" alt="B4 Indicator Pro in the lower panel of a NinjaTrader&reg; 8 chart with squeeze zones, momentum bars and trend shading, and buy and sell arrows on price.">
+              <span class="spot" aria-hidden="true" data-n="1" style="--x:21%;--y:21%">1</span>
+              <span class="spot" aria-hidden="true" data-n="2" style="--x:37%;--y:46%">2</span>
+              <span class="spot" aria-hidden="true" data-n="3" style="--x:27%;--y:59%">3</span>
+              <span class="spot" aria-hidden="true" data-n="4" style="--x:45%;--y:45%">4</span>
+              <span class="spot" aria-hidden="true" data-n="5" style="--x:40%;--y:83%">5</span>
+            </div>
+          </figure>
+          <div class="tour-side">
+            <ol class="tour-list" aria-label="Parts of B4 Indicator Pro">
+              <li><button class="tour-item" type="button" data-n="1" aria-pressed="true"><span class="tn" aria-hidden="true">1</span><span class="tt">Arrows on price</span></button><p class="td">Buy and sell arrows on the price panel, on the bar they print.</p></li>
+              <li><button class="tour-item" type="button" data-n="2" aria-pressed="false"><span class="tn" aria-hidden="true">2</span><span class="tt">Squeeze zones</span></button><p class="td">Highlighted areas where price compresses before it moves.</p></li>
+              <li><button class="tour-item" type="button" data-n="3" aria-pressed="false"><span class="tn" aria-hidden="true">3</span><span class="tt">Momentum bars</span></button><p class="td">Green above zero, red below, so you can see momentum build and fade.</p></li>
+              <li><button class="tour-item" type="button" data-n="4" aria-pressed="false"><span class="tn" aria-hidden="true">4</span><span class="tt">Trend shading</span></button><p class="td">Green and red background that shows the trend context at a glance.</p></li>
+              <li><button class="tour-item" type="button" data-n="5" aria-pressed="false"><span class="tn" aria-hidden="true">5</span><span class="tt">Trend band</span></button><p class="td">A smoothed band that follows the move and flattens when it tires.</p></li>
+            </ol>
+            <a class="tour-more" href="products/b4-indicator-pro.html">See B4 Indicator Pro<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+        <div class="tour-view" data-view="indicators1">
+          <figure class="tour-shot">
+            <figcaption class="tour-vtitle">B4 Ichimoku</figcaption>
+            <div class="tour-img"><img src="assets/tour/ichimoku.webp" width="1600" height="668" loading="lazy" decoding="async" alt="B4 Ichimoku on a NinjaTrader&reg; 8 chart with the Ichimoku cloud, entry, stop and target lines and the Trade Manager panel.">
+              <span class="spot" aria-hidden="true" data-n="1" style="--x:88%;--y:8%">1</span>
+              <span class="spot" aria-hidden="true" data-n="2" style="--x:80%;--y:34%">2</span>
+              <span class="spot" aria-hidden="true" data-n="3" style="--x:90%;--y:60%">3</span>
+              <span class="spot" aria-hidden="true" data-n="4" style="--x:15%;--y:55%">4</span>
+            </div>
+          </figure>
+          <div class="tour-side">
+            <ol class="tour-list" aria-label="Parts of B4 Ichimoku">
+              <li><button class="tour-item" type="button" data-n="1" aria-pressed="true"><span class="tn" aria-hidden="true">1</span><span class="tt">Trade Manager</span></button><p class="td">Pattern, direction, entry, stop and two targets in one small panel.</p></li>
+              <li><button class="tour-item" type="button" data-n="2" aria-pressed="false"><span class="tn" aria-hidden="true">2</span><span class="tt">Trade levels</span></button><p class="td">Entry, stop and target lines drawn on the chart where they apply.</p></li>
+              <li><button class="tour-item" type="button" data-n="3" aria-pressed="false"><span class="tn" aria-hidden="true">3</span><span class="tt">Ichimoku cloud</span></button><p class="td">The cloud ahead of price, read the B4 Ichimoku way.</p></li>
+              <li><button class="tour-item" type="button" data-n="4" aria-pressed="false"><span class="tn" aria-hidden="true">4</span><span class="tt">Trend shading</span></button><p class="td">Background shading that shows the trend context across the session.</p></li>
+            </ol>
+            <a class="tour-more" href="products/b4-ichimoku.html">See B4 Ichimoku<span aria-hidden="true"> &rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="fine" style="margin-top:16px">NinjaTrader&reg; 8 screens with B4 tools. Not a live trading result.</p>
+  </div>
+</section>
 
 <!-- SQUAWK -->
 <section class="section sq" id="hear-it" aria-labelledby="hear-title" style="padding-top:clamp(24px,4vw,48px)">
@@ -592,11 +815,11 @@ p{margin:0}
         <figcaption class="cap"><h3>The Scanner</h3><p>Scan supported markets and surface potential opportunities using B4 signals and conditions.</p></figcaption>
       </figure>
       <figure class="shot third tall reveal">
-        <a href="assets/previews/l2-dom-pro-v4.webp"><img src="assets/previews/l2-dom-pro-v4.webp" width="1264" height="1244" loading="lazy" decoding="async" alt="B4 Order Flow DOM with Level II depth, liquidity and trade-management controls."></a>
+        <a href="assets/tour/dom.webp"><img src="assets/tour/dom.webp" width="1264" height="1114" loading="lazy" decoding="async" alt="B4 Order Flow DOM with Level II depth, liquidity and trade-management controls."></a>
         <figcaption class="cap"><h3>The DOM</h3><p>Level II depth and liquidity, with stop, exit and Flatten All controls for your own manual positions.</p></figcaption>
       </figure>
       <figure class="shot third tall reveal">
-        <a href="assets/previews/indicator-pro.webp"><img src="assets/previews/indicator-pro.webp" width="1600" height="603" loading="lazy" decoding="async" alt="B4 Indicator Pro in the lower panel of a NinjaTrader 8 chart, with squeeze areas and buy and sell arrows on the price panel."></a>
+        <a href="assets/tour/indicator-pro.webp"><img src="assets/tour/indicator-pro.webp" width="1424" height="603" loading="lazy" decoding="async" alt="B4 Indicator Pro in the lower panel of a NinjaTrader 8 chart, with squeeze areas and buy and sell arrows on the price panel."></a>
         <figcaption class="cap"><h3>B4 Indicator Pro</h3><p>Compression, momentum and the breakout, read in one lower panel.</p></figcaption>
       </figure>
       <figure class="shot third tall reveal">
@@ -900,6 +1123,41 @@ p{margin:0}
   });
   var tp=d.getElementById('tpause'), track=d.querySelector('.ttrack');
   if(tp&&track){ tp.addEventListener('click',function(){ var p=track.classList.toggle('paused'); tp.setAttribute('aria-pressed',p?'true':'false'); tp.textContent=p?'Play testimonials':'Pause testimonials'; }); }
+})();
+</script>
+<script>
+(function(){
+  var d=document, tabs=[].slice.call(d.querySelectorAll('.tour-tab'));
+  if(!tabs.length) return;
+  function select(t,focus){
+    tabs.forEach(function(x){var on=x===t; x.setAttribute('aria-selected',on?'true':'false'); x.tabIndex=on?0:-1;
+      var p=d.getElementById(x.getAttribute('aria-controls')); if(p){p.hidden=!on; if(!on){[].forEach.call(p.querySelectorAll('video'),function(v){v.pause();});}}});
+    if(focus) t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t,false);});
+    t.addEventListener('keydown',function(e){var n=null;
+      if(e.key==='ArrowRight') n=tabs[(i+1)%tabs.length]; else if(e.key==='ArrowLeft') n=tabs[(i-1+tabs.length)%tabs.length];
+      else if(e.key==='Home') n=tabs[0]; else if(e.key==='End') n=tabs[tabs.length-1];
+      if(n){e.preventDefault(); select(n,true);}});
+  });
+  [].forEach.call(d.querySelectorAll('.tour-view'),function(v){
+    var items=[].slice.call(v.querySelectorAll('.tour-item')), spots=[].slice.call(v.querySelectorAll('.spot'));
+    function act(n){
+      items.forEach(function(b){var on=b.getAttribute('data-n')===n; b.setAttribute('aria-pressed',on?'true':'false'); b.parentNode.classList.toggle('on',on);});
+      spots.forEach(function(s){s.classList.toggle('on',s.getAttribute('data-n')===n);});
+    }
+    items.forEach(function(b){b.addEventListener('click',function(){act(b.getAttribute('data-n'));});});
+    spots.forEach(function(s){
+      s.addEventListener('click',function(){act(s.getAttribute('data-n'));
+        var b=v.querySelector('.tour-item[data-n="'+s.getAttribute('data-n')+'"]'); if(b&&b.scrollIntoView&&matchMedia('(max-width: 900px)').matches){b.scrollIntoView({block:'nearest'});}});
+      s.addEventListener('mouseenter',function(){act(s.getAttribute('data-n'));});
+    });
+    act('1');
+  });
+  [].forEach.call(d.querySelectorAll('[data-tour]'),function(a){
+    a.addEventListener('click',function(){var t=d.getElementById('tt-'+a.getAttribute('data-tour')); if(t) select(t,false);});
+  });
 })();
 </script>
 </body>
