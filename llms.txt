@@ -1,0 +1,44 @@
+# B4 Signals
+
+> B4 Signals makes trading tools for NinjaTrader® 8: ten B4 tools, each built for one job (market context, order flow and disciplined strategy execution), sold together as one membership. B4 Signals is a product of TopTech Digital LLC. Contact: info@b4signals.com
+
+Key facts:
+
+- Platform: every B4 tool is built for NinjaTrader 8. The B4 TradingView indicators are discontinued: they are no longer updated or supported.
+- One membership, the whole B4 line-up. Every plan includes the same tools; only the way you pay changes.
+- Prices: Monthly $150 per month; Quarterly $397 every 3 months; Annual $897 per year; One-Time $1,200 single payment (not a subscription).
+- One-Time is a single payment for the current B4 membership products. B4 Quantum is included when it is released; other new products and future major versions may require a separate purchase.
+- Presale: until November 27, 2026 (Black Friday), code B4V4PRESALE gives 30% off the first payment: $105 instead of $150 a month, $277.90 instead of $397 every 3 months, $627.90 instead of $897 a year, or $840 instead of $1,200 one-time. After that, the regular prices apply.
+- B4 V4: there is no promised release date. Presale members get the current B4 tools now and the full B4 V4 line-up as soon as it is released.
+- B4 Quantum is coming soon. It is not for sale, has no price and is not part of the Monthly, Quarterly or Annual memberships on sale today.
+- B4 tools are analysis and decision-support software for educational purposes. They are not investment advice. No indicator, strategy or AI tool can guarantee a trading outcome. Trading involves substantial risk of loss.
+- NinjaTrader® is a registered trademark of NinjaTrader Group, LLC. No NinjaTrader company endorses, recommends or approves B4 products.
+
+## The ten B4 tools
+
+Each tool below is included in every membership, except B4 Quantum.
+
+- [B4 Bars](https://b4signals.com/products/b4-bars.html): The custom B4 bar type for NinjaTrader 8: build your charts on the same bars as the B4 charts and lessons. Available today.
+- [B4 PriceLine](https://b4signals.com/products/b4-priceline.html): Price, its halo and the levels that matter. Presale; ships with the B4 V4 release.
+- [B4 Ichimoku](https://b4signals.com/products/b4-ichimoku.html): The whole B4 Ichimoku method on one chart. Presale; ships with the B4 V4 release.
+- [B4 Algo Pro](https://b4signals.com/products/b4-algo.html): The core B4 signal engine: trend, Ichimoku and VWAP context, machine-learning signals, a live HUD and trend-exhaustion markers. Presale; ships with the B4 V4 release.
+- [B4 Indicator Pro](https://b4signals.com/products/b4-indicator-pro.html): MACD-BB bands, momentum histogram, squeezes and the Trend Cloud in one NinjaTrader 8 panel, with zone levels for context. Presale; ships with the B4 V4 release.
+- [B4 Auction Pro](https://b4signals.com/products/b4-auction-pro.html): Footprint, volume profile and CVD: where the volume traded and who was in control at every price. Presale; ships with the B4 V4 release.
+- [B4 Order Flow](https://b4signals.com/products/b4-order-flow.html): The Tape, the DOM and the Scanner: hear the tape, see the liquidity and find the next setup, in one window. Presale; ships with the B4 V4 release.
+- [B4 Confirmation](https://b4signals.com/products/b4-confirmation.html): Let a second chart confirm a setup before your strategy acts. Presale; ships with the B4 V4 release.
+- [B4 CoPilot Pro](https://b4signals.com/products/b4-copilot-pro.html): One execution engine for every compatible signal source. Connect B4, third-party or your own indicators through the B4 Signal API, confirm them with order flow, and let CoPilot Pro carry out your rules inside NinjaTrader® 8. Available today (current build); B4 CoPilot Pro V4 arrives with the B4 V4 release.
+- [B4 Quantum](https://b4signals.com/products/b4-quantum.html): An AI research lab that writes, tests and checks trading ideas overnight. Coming soon; not for sale yet; no price yet.
+
+## Memberships and help
+
+- [Memberships and prices](https://b4signals.com/#pricing): Monthly, Quarterly, Annual and One-Time plans, with the presale code.
+- [FAQ](https://b4signals.com/#faq): platform, release timing, plan differences, presale, B4 Quantum, cancelling and refunds.
+- [Prop firm connection guides](https://b4signals.com/connection-guides.html): how to connect your prop firm account to NinjaTrader 8 (Rithmic, Tradovate and NinjaTrader Brokerage connections), step by step.
+
+## Legal
+
+- [Terms and Conditions](https://b4signals.com/legal/terms-and-conditions.html)
+- [Refund Policy](https://b4signals.com/legal/refund-policy.html)
+- [Privacy Policy](https://b4signals.com/legal/privacy-policy.html)
+- [Cancel Subscription](https://b4signals.com/legal/cancel-subscription.html)
+- [Confidentiality Agreement](https://b4signals.com/legal/confidentiality-agreement.html)

@@ -3,4 +3,4 @@ Disallow: /tools/
 Disallow: /*backup*
 Allow: /
 
-Sitemap: https://www.b4signals.com/sitemap.xml
+Sitemap: https://b4signals.com/sitemap.xml
