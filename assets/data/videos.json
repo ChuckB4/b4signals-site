@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T02:57:56-06:00",
+  "generated": "2026-11-14T22:34:48-06:00",
   "source": "verified YouTube URLs only",
   "videos": [
     {
@@ -9,7 +9,7 @@
       "summary": "Seven and a half minutes: the B4 chart (footprint, volume profile, key levels, signal markers), B4 Indicator Pro, B4 Ichimoku, the Order Flow Tape, DOM and Scanner, B4 CoPilot Pro, then two NQ longs from signal to exit.",
       "thumb": "assets/videos/thumb_S18.jpg",
       "note": "Tour images are illustrations, not live trading results. The two trades are simulated (NinjaTrader Sim account). Selected trades; the session also had losing trades.",
-      "youtube_id": null
+      "youtube_id": "oYvKvmBx03w"
     },
     {
       "id": "S13",
@@ -18,7 +18,7 @@
       "summary": "Footprint bars, volume profile and key levels, the Tape that reads the order flow out loud, B4 levels on the DOM ladder, and B4 CoPilot Pro managing one ES short from entry to exit.",
       "thumb": "assets/videos/thumb_S13.jpg",
       "note": "Simulated (NinjaTrader Sim account). One trade chosen from a longer session; not typical of every trade.",
-      "youtube_id": null
+      "youtube_id": "OlIG93BEEiI"
     },
     {
       "id": "S15",
@@ -27,7 +27,7 @@
       "summary": "B4 Order Flow's Tape: the situation line, every print with its size and state, big prints, levels beside the prints, an event timeline, and Voice + Teach.",
       "thumb": "assets/videos/thumb_S15.jpg",
       "note": "Recorded on a NinjaTrader Sim account. B4 Order Flow is on pre-sale and ships with B4 V4.",
-      "youtube_id": null
+      "youtube_id": "cJzoxfqqidM"
     },
     {
       "id": "S17",
@@ -36,7 +36,7 @@
       "summary": "The B4 chart marks the setup, B4 CoPilot Pro enters with the stop and two targets attached, the Tape reads the order flow, and a trailing stop takes the last contracts.",
       "thumb": "assets/videos/thumb_S17.jpg",
       "note": "Simulated (NinjaTrader Sim account). Selected trades; the session also had losing trades.",
-      "youtube_id": null
+      "youtube_id": "IO1hHk8_Qvc"
     }
   ]
 }
