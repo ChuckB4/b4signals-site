@@ -9,7 +9,7 @@ Key facts:
 - Prices: Monthly $150 per month; Quarterly $397 every 3 months; Annual $897 per year; One-Time $1,200 single payment (not a subscription).
 - One-Time is a single payment for the current B4 membership products. B4 Quantum is included when it is released; other new products and future major versions may require a separate purchase.
 - Presale: until November 27, 2026 (Black Friday), code B4V4PRESALE gives 30% off the first payment: $105 instead of $150 a month, $277.90 instead of $397 every 3 months, $627.90 instead of $897 a year, or $840 instead of $1,200 one-time. After that, the regular prices apply.
-- B4 V4: there is no promised release date. Presale members get the current B4 tools now and the full B4 V4 line-up as soon as it is released.
+- B4 V4: available now. Every membership includes the full B4 V4 line-up: B4 Bars, B4 Algo Pro, B4 Indicator Pro, B4 Auction Pro, B4 PriceLine, B4 Ichimoku (with B4 Wave), B4 Confirmation, B4 CoPilot Pro and B4 Order Flow (Tape, DOM Pro and Scanner). B4 Quantum is coming soon.
 - B4 Quantum is coming soon. It is not for sale, has no price and is not part of the Monthly, Quarterly or Annual memberships on sale today.
 - B4 tools are analysis and decision-support software for educational purposes. They are not investment advice. No indicator, strategy or AI tool can guarantee a trading outcome. Trading involves substantial risk of loss.
 - NinjaTrader® is a registered trademark of NinjaTrader Group, LLC. No NinjaTrader company endorses, recommends or approves B4 products.
@@ -18,15 +18,15 @@ Key facts:
 
 Each tool below is included in every membership, except B4 Quantum.
 
-- [B4 Bars](https://b4signals.com/products/b4-bars.html): The custom B4 bar type for NinjaTrader 8: build your charts on the same bars as the B4 charts and lessons. Available today.
-- [B4 PriceLine](https://b4signals.com/products/b4-priceline.html): Price, its halo and the levels that matter. Presale; ships with the B4 V4 release.
-- [B4 Ichimoku](https://b4signals.com/products/b4-ichimoku.html): The whole B4 Ichimoku method on one chart. Presale; ships with the B4 V4 release.
-- [B4 Algo Pro](https://b4signals.com/products/b4-algo.html): The core B4 signal engine: trend, Ichimoku and VWAP context, machine-learning signals, a live HUD and trend-exhaustion markers. Presale; ships with the B4 V4 release.
-- [B4 Indicator Pro](https://b4signals.com/products/b4-indicator-pro.html): MACD-BB bands, momentum histogram, squeezes and the Trend Cloud in one NinjaTrader 8 panel, with zone levels for context. Presale; ships with the B4 V4 release.
-- [B4 Auction Pro](https://b4signals.com/products/b4-auction-pro.html): Footprint, volume profile and CVD: where the volume traded and who was in control at every price. Presale; ships with the B4 V4 release.
-- [B4 Order Flow](https://b4signals.com/products/b4-order-flow.html): The Tape, the DOM and the Scanner: hear the tape, see the liquidity and find the next setup, in one window. Presale; ships with the B4 V4 release.
-- [B4 Confirmation](https://b4signals.com/products/b4-confirmation.html): Let a second chart confirm a setup before your strategy acts. Presale; ships with the B4 V4 release.
-- [B4 CoPilot Pro](https://b4signals.com/products/b4-copilot-pro.html): One execution engine for every compatible signal source. Connect B4, third-party or your own indicators through the B4 Signal API, confirm them with order flow, and let CoPilot Pro carry out your rules inside NinjaTrader® 8. Available today (current build); B4 CoPilot Pro V4 arrives with the B4 V4 release.
+- [B4 Bars](https://b4signals.com/products/b4-bars.html): The custom B4 bar type for NinjaTrader 8: build your charts on the same bars as the B4 charts and lessons. Available now.
+- [B4 PriceLine](https://b4signals.com/products/b4-priceline.html): Price, its halo and the levels that matter. Available now.
+- [B4 Ichimoku](https://b4signals.com/products/b4-ichimoku.html): The whole B4 Ichimoku method on one chart: B4 Patterns, B4 KISS, B4 Wave and B4 Shoyu in one indicator. Available now.
+- [B4 Algo Pro](https://b4signals.com/products/b4-algo.html): The core B4 signal engine: trend, Ichimoku and VWAP context, machine-learning signals, a live HUD and trend-exhaustion markers. Available now.
+- [B4 Indicator Pro](https://b4signals.com/products/b4-indicator-pro.html): MACD-BB bands, momentum histogram, squeezes and the Trend Cloud in one NinjaTrader 8 panel, with zone levels for context. Available now.
+- [B4 Auction Pro](https://b4signals.com/products/b4-auction-pro.html): Footprint, volume profile and CVD: where the volume traded and who was in control at every price. Available now.
+- [B4 Order Flow](https://b4signals.com/products/b4-order-flow.html): The Tape, the DOM and the Scanner: hear the tape, see the liquidity and find the next setup, in one window. Available now.
+- [B4 Confirmation](https://b4signals.com/products/b4-confirmation.html): Let a second chart confirm a setup before your strategy acts. Available now.
+- [B4 CoPilot Pro](https://b4signals.com/products/b4-copilot-pro.html): One execution engine for every compatible signal source. Connect B4, third-party or your own indicators through the B4 Signal API, confirm them with order flow, and let CoPilot Pro carry out your rules inside NinjaTrader® 8. Available now (B4 CoPilot Pro V4).
 - [B4 Quantum](https://b4signals.com/products/b4-quantum.html): An AI research lab that writes, tests and checks trading ideas overnight. Coming soon; not for sale yet; no price yet.
 
 ## Memberships and help
