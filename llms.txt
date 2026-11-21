@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Platform: every B4 tool is built for NinjaTrader 8. The B4 TradingView indicators are discontinued: they are no longer updated or supported.
+- Platform: every B4 tool is built for NinjaTrader 8. The B4 TradingView indicators are temporarily unavailable while we work on a possible fix.
 - One membership, the whole B4 line-up. Every plan includes the same tools; only the way you pay changes.
 - Prices: Monthly $150 per month; Quarterly $397 every 3 months; Annual $897 per year; One-Time $1,200 single payment (not a subscription).
 - One-Time is a single payment for the current B4 membership products. B4 Quantum is included, when it is released, for One-Time purchases made by November 27, 2026; other new products and future major versions may require a separate purchase.
